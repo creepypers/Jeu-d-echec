@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Jeu D'echec (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Jeu D'echec (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

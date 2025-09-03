@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="Jeu_D_echec.Controls.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jeu_D_echec.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style x:Key="TitleTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="48"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{ThemeResource TextFillColorPrimaryBrush}"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,40"/>
+        </Style>
+        
+        <Style x:Key="SubtitleTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,20"/>
+        </Style>
+        
+        <Style x:Key="InputTextStyle" TargetType="TextBox">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="Padding" Value="15,10"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+        
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="Padding" Value="30,15"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="MinWidth" Value="200"/>
+        </Style>
+    </UserControl.Resources>
+
+    <ScrollViewer>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
+              Padding="40">
+            
+            <!-- Main Content -->
+            <StackPanel HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"
+                        MaxWidth="600"
+                        Spacing="20">
+                
+                <!-- Title -->
+                <TextBlock Text="♔ Jeu d'Échecs ♛" 
+                           Style="{StaticResource TitleTextStyle}"/>
+                
+                <TextBlock Text="Bienvenue dans votre jeu d'échecs préféré !" 
+                           Style="{StaticResource SubtitleTextStyle}"/>
+                
+                <!-- Player Names Section -->
+                <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="30"
+                        Margin="0,20,0,0">
+                    
+                    <StackPanel Spacing="15">
+                        <TextBlock Text="Nouvelle Partie" 
+                                   FontSize="20" 
+                                   FontWeight="SemiBold"
+                                   Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
+                        
+                        <TextBlock Text="Entrez les noms des joueurs :" 
+                                   FontSize="16"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                        
+                        <TextBox x:ConnectionId='9' x:Name="Player1NameTextBox" 
+                                 PlaceholderText="Nom du joueur blanc (ex: Alice)"
+                                 Style="{StaticResource InputTextStyle}"/>
+                        
+                        <TextBox x:ConnectionId='10' x:Name="Player2NameTextBox" 
+                                 PlaceholderText="Nom du joueur noir (ex: Bob)"
+                                 Style="{StaticResource InputTextStyle}"/>
+                        
+                        <Button x:ConnectionId='11' x:Name="StartNewGameButton" 
+                                Content="Commencer une nouvelle partie"
+                                Style="{StaticResource ButtonStyle}"
+                                                           />
+                    </StackPanel>
+                </Border>
+                
+                <!-- Saved Games Section -->
+                <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="30"
+                        Margin="0,20,0,0">
+                    
+                    <StackPanel Spacing="15">
+                        <TextBlock Text="Parties Sauvegardées" 
+                                   FontSize="20" 
+                                   FontWeight="SemiBold"
+                                   Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
+                        
+                        <TextBlock Text="Reprenez une partie en cours :" 
+                                   FontSize="16"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                        
+                        <!-- Saved Games List -->
+                        <ListView x:ConnectionId='4' x:Name="SavedGamesListView" 
+                                  Height="200"
+                                  SelectionMode="Single"
+                                  Margin="0,10,0,0">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Padding="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        
+                                        <StackPanel Grid.Column="0">
+                                            <TextBlock Text="{Binding GameTitle}" 
+                                                       FontWeight="SemiBold"
+                                                       FontSize="16"/>
+                                            <TextBlock Text="{Binding PlayerInfo}" 
+                                                       FontSize="14"
+                                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                                                                                         <TextBlock Text="{Binding LastPlayedText}" 
+                                                        FontSize="12"
+                                                        Foreground="{ThemeResource TextFillColorTertiaryBrush}"/>
+                                        </StackPanel>
+                                        
+                                        <StackPanel Grid.Column="1" 
+                                                    Orientation="Horizontal" 
+                                                    Spacing="10">
+                                            <Button x:ConnectionId='7' Content="Reprendre" 
+                                                                             
+                                                    Tag="{Binding}"
+                                                    Style="{StaticResource AccentButtonStyle}"
+                                                    Padding="15,8"/>
+                                            <Button x:ConnectionId='8' Content="Supprimer" 
+                                                                             
+                                                    Tag="{Binding}"
+                                                    Style="{StaticResource DefaultButtonStyle}"
+                                                    Padding="15,8"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        
+                        <TextBlock x:ConnectionId='5' x:Name="NoSavedGamesText" 
+                                   Text="Aucune partie sauvegardée"
+                                   FontSize="14"
+                                   Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,20,0,0"
+                                   Visibility="Collapsed"/>
+                    </StackPanel>
+                </Border>
+                
+                <!-- Quick Actions -->
+                <StackPanel Orientation="Horizontal" 
+                            HorizontalAlignment="Center" 
+                            Spacing="20"
+                            Margin="0,30,0,0">
+                    
+                    <Button x:ConnectionId='2' Content="Règles du jeu" 
+                                                    
+                            Style="{StaticResource ButtonStyle}"/>
+                    
+                    <Button x:ConnectionId='3' Content="Paramètres" 
+                                                       
+                            Style="{StaticResource ButtonStyle}"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</UserControl>
+

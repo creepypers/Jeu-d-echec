@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Jeu_D_echec.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jeu_D_echec"
+    xmlns:controls="using:Jeu_D_echec.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Jeu d'Échecs WinUI">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="Base" />
+    </Window.SystemBackdrop>
+
+    <Grid x:ConnectionId='2' x:Name="MainGrid" 
+          Background="Transparent"
+                                    >
+
+        <!-- Navigation Frame -->
+        <Frame x:ConnectionId='3' x:Name="MainFrame" 
+                                                    />
+
+
+    </Grid>
+</Window>
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="Jeu_D_echec.Controls.ChessSquare"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jeu_D_echec.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <!-- Animations -->
+        <Storyboard x:Name="SelectionAnimation">
+            <DoubleAnimation x:Name="SelectionScaleAnimation"
+                           Storyboard.TargetName="SelectionBorder"
+                           Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                           From="0.8"
+                           To="1.0"
+                           Duration="0:0:0.2"
+                           EasingFunction="{StaticResource CubicEase}"/>
+            <DoubleAnimation x:Name="SelectionScaleYAnimation"
+                           Storyboard.TargetName="SelectionBorder"
+                           Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                           From="0.8"
+                           To="1.0"
+                           Duration="0:0:0.2"
+                           EasingFunction="{StaticResource CubicEase}"/>
+            <DoubleAnimation x:Name="SelectionOpacityAnimation"
+                           Storyboard.TargetName="SelectionBorder"
+                           Storyboard.TargetProperty="Opacity"
+                           From="0.0"
+                           To="1.0"
+                           Duration="0:0:0.2"/>
+        </Storyboard>
+
+        <Storyboard x:Name="ValidMoveAnimation">
+            <DoubleAnimation x:Name="ValidMoveScaleAnimation"
+                           Storyboard.TargetName="ValidMoveIndicator"
+                           Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                           From="0.0"
+                           To="1.0"
+                           Duration="0:0:0.3"
+                           EasingFunction="{StaticResource BackEase}"/>
+            <DoubleAnimation x:Name="ValidMoveScaleYAnimation"
+                           Storyboard.TargetName="ValidMoveIndicator"
+                           Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                           From="0.0"
+                           To="1.0"
+                           Duration="0:0:0.3"
+                           EasingFunction="{StaticResource BackEase}"/>
+            <DoubleAnimation x:Name="ValidMoveOpacityAnimation"
+                           Storyboard.TargetName="ValidMoveIndicator"
+                           Storyboard.TargetProperty="Opacity"
+                           From="0.0"
+                           To="1.0"
+                           Duration="0:0:0.3"/>
+        </Storyboard>
+
+        <Storyboard x:Name="PieceAnimation">
+            <DoubleAnimation x:Name="PieceScaleAnimation"
+                           Storyboard.TargetName="PieceText"
+                           Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                           From="1.2"
+                           To="1.0"
+                           Duration="0:0:0.2"
+                           EasingFunction="{StaticResource ElasticEase}"/>
+            <DoubleAnimation x:Name="PieceScaleYAnimation"
+                           Storyboard.TargetName="PieceText"
+                           Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                           From="1.2"
+                           To="1.0"
+                           Duration="0:0:0.2"
+                           EasingFunction="{StaticResource ElasticEase}"/>
+        </Storyboard>
+
+        <Storyboard x:Name="CheckAnimation">
+            <ColorAnimation x:Name="CheckColorAnimation"
+                          Storyboard.TargetName="CheckBrush"
+                          Storyboard.TargetProperty="Color"
+                          From="Transparent"
+                          To="Red"
+                          Duration="0:0:0.5"
+                          AutoReverse="True"
+                          RepeatBehavior="Forever"/>
+        </Storyboard>
+
+        <!-- Easing Functions -->
+        <CubicEase x:Key="CubicEase" EasingMode="EaseOut"/>
+        <BackEase x:Key="BackEase" EasingMode="EaseOut" Amplitude="0.3"/>
+        <ElasticEase x:Key="ElasticEase" EasingMode="EaseOut" Oscillations="2" Springiness="3"/>
+
+        <!-- Brushes -->
+        <SolidColorBrush x:Key="CheckBrush" Color="Transparent"/>
+    </UserControl.Resources>
+
+    <Grid x:Name="SquareGrid" 
+          Background="{x:Bind SquareColor, Mode=OneWay}"
+          PointerPressed="OnPointerPressed"
+          PointerEntered="OnPointerEntered"
+          PointerExited="OnPointerExited">
+        
+        <!-- Base square -->
+        <Border x:Name="BaseBorder"
+                Background="{x:Bind SquareColor, Mode=OneWay}"
+                CornerRadius="4"
+                BorderThickness="1"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+        </Border>
+
+        <!-- Selection indicator -->
+        <Border x:Name="SelectionBorder"
+                Background="DodgerBlue"
+                Opacity="0.0"
+                CornerRadius="4"
+                Margin="2"
+                RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
+            </Border.RenderTransform>
+        </Border>
+
+        <!-- Valid move indicator -->
+        <Ellipse x:Name="ValidMoveIndicator"
+                 Fill="DodgerBlue"
+                 Opacity="0.0"
+                 Width="20"
+                 Height="20"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform ScaleX="0.0" ScaleY="0.0"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+        <!-- Check indicator -->
+        <Border x:Name="CheckBorder"
+                Background="{StaticResource CheckBrush}"
+                CornerRadius="4"
+                Margin="1"/>
+
+        <!-- Piece -->
+        <TextBlock x:Name="PieceText"
+                   Text="{x:Bind Piece.UnicodeSymbol, Mode=OneWay}"
+                   FontSize="32"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Foreground="{x:Bind PieceColor, Mode=OneWay}"
+                   RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleX="1.0" ScaleY="1.0"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+        <!-- Hover effect -->
+        <Border x:Name="HoverBorder"
+                Background="{ThemeResource ControlFillColorDefaultBrush}"
+                Opacity="0.0"
+                CornerRadius="4"
+                Margin="1"/>
+    </Grid>
+</UserControl>

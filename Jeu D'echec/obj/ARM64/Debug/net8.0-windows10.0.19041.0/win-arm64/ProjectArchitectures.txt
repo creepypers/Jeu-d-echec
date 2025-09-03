@@ -1,0 +1,1 @@
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\Jeu D'echec.csproj;arm64
