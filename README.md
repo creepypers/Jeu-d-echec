@@ -1,14 +1,15 @@
 # Jeu d'Échecs WinUI 3
 
-Un jeu d'échecs complet et moderne développé avec WinUI 3, doté d'animations fluides et d'une interface utilisateur élégante.
+Un jeu d'échecs complet et moderne développé avec WinUI 3, doté d'animations fluides, d'une interface utilisateur élégante et d'un système de persistance de données avec Entity Framework.
 
 ## 🎯 Fonctionnalités
 
 ### ✨ Interface Moderne
 - **Design WinUI 3** avec effet Mica backdrop
 - **Animations fluides** pour tous les mouvements et interactions
-- **Interface responsive** avec panneau de contrôle intégré
+- **Interface responsive** avec navigation intuitive
 - **Thème adaptatif** qui suit les préférences système
+- **Layout épuré** avec cartes modernes et coins arrondis
 
 ### 🏁 Logique de Jeu Complète
 - **Mouvements valides** pour toutes les pièces d'échecs
@@ -16,25 +17,33 @@ Un jeu d'échecs complet et moderne développé avec WinUI 3, doté d'animations
 - **Gestion du roque** (petit et grand roque)
 - **Promotion de pion** automatique en dame
 - **Prévention des coups illégaux** (mise en échec de son propre roi)
+- **Demande de match nul** avec confirmation
+- **Gestion des états** : Échec, Mat, Pat, Match nul
 
 ### 🎮 Contrôles et Interactions
 - **Sélection intuitive** des pièces par clic
 - **Indicateurs visuels** pour les coups valides
 - **Animations de capture** avec rotation et réduction
 - **Historique des coups** en temps réel
-- **Annulation de coups** (Ctrl+Z)
+- **Boutons de contrôle** : Sauvegarder, Demander match nul, Retour au menu
+
+### 💾 Persistance de Données
+- **Base de données SQLite** avec Entity Framework Core
+- **Sauvegarde automatique** des positions des pièces
+- **Chargement de parties** avec restauration exacte de l'état
+- **Gestion des parties sauvegardées** avec interface dédiée
+- **Fallback en mémoire** si la base de données n'est pas disponible
 
 ### 📊 Statistiques et Suivi
 - **Compteur de coups** joués
-- **Temps de jeu** en temps réel
-- **Pièces capturées** comptabilisées
 - **Historique complet** des mouvements
-- **Indicateur de joueur actuel**
+- **Indicateur de joueur actuel** avec noms personnalisés
+- **Statut du jeu** en temps réel (En cours, Échec, Mat, etc.)
+- **Informations des parties** : Joueurs, date de création, dernière partie
 
 ### ⌨️ Raccourcis Clavier
 - **F1** : Aide
 - **Ctrl+N** : Nouvelle partie
-- **Ctrl+Z** : Annuler le dernier coup
 
 ## 🏗️ Architecture
 
@@ -43,11 +52,23 @@ Un jeu d'échecs complet et moderne développé avec WinUI 3, doté d'animations
 - `ChessPiece` : Représentation des pièces avec symboles Unicode
 - `ChessBoard` : Logique complète du plateau avec validation
 - `ChessGame` : Gestion de l'état du jeu et des événements
+- `GameInfo` : Informations sur une partie (joueurs, date, etc.)
+- `SavedGameInfo` : Informations sur une partie sauvegardée
 
 ### Contrôles Visuels
 - `ChessSquare` : Cases individuelles avec animations
 - `ChessBoard` : Plateau principal avec gestion des mouvements
-- `GameControlPanel` : Panneau de contrôle et statistiques
+- `GamePage` : Page de jeu avec contrôles intégrés
+- `HomePage` : Page d'accueil avec gestion des parties
+
+### Persistance de Données
+- `ChessDbContext` : Contexte Entity Framework pour SQLite
+- `SavedGame` : Modèle pour les parties sauvegardées
+- `SavedChessMove` : Modèle pour les mouvements sauvegardés
+- `BoardState` : Modèle pour l'état du plateau
+- `IGameDataService` : Interface pour les services de données
+- `EntityFrameworkGameDataService` : Implémentation avec EF Core
+- `SimpleGameDataService` : Implémentation en mémoire (fallback)
 
 ### Animations
 - **Sélection de pièce** : Animation d'échelle et d'opacité
@@ -62,6 +83,7 @@ Un jeu d'échecs complet et moderne développé avec WinUI 3, doté d'animations
 - Windows 10 version 1903 ou ultérieure
 - .NET 8.0 SDK
 - Visual Studio 2022 ou Visual Studio Code
+- Windows App SDK 1.7 ou ultérieur
 
 ### Compilation
 ```bash
@@ -71,6 +93,12 @@ dotnet build
 ### Exécution
 ```bash
 dotnet run
+```
+
+### Base de Données
+L'application utilise SQLite avec Entity Framework Core. La base de données est automatiquement créée au premier lancement dans :
+```
+%LocalAppData%\ChessGame\chess.db
 ```
 
 ## 🎨 Design et UX
@@ -96,8 +124,10 @@ dotnet run
 ### Structure du Projet
 ```
 Jeu D'echec/
-├── Models/           # Modèles de données
-├── Controls/         # Contrôles personnalisés
+├── Models/           # Modèles de données du jeu
+├── Controls/         # Contrôles personnalisés (HomePage, GamePage, ChessBoard)
+├── Data/             # Modèles Entity Framework et contexte
+├── Services/         # Services de persistance de données
 ├── MainWindow.xaml   # Interface principale
 └── App.xaml         # Configuration de l'application
 ```
@@ -106,17 +136,41 @@ Jeu D'echec/
 - **WinUI 3** : Framework d'interface utilisateur moderne
 - **C# 12** : Langage de programmation avec nullable reference types
 - **XAML** : Déclaration d'interface utilisateur
+- **Entity Framework Core** : ORM pour la persistance de données
+- **SQLite** : Base de données locale
 - **MVVM Pattern** : Architecture modulaire
 
 ## 🎯 Fonctionnalités Futures
 
 - [ ] Mode multijoueur en ligne
 - [ ] Moteur d'IA pour jouer contre l'ordinateur
-- [ ] Sauvegarde et chargement de parties
+- [x] ~~Sauvegarde et chargement de parties~~ ✅ **Implémenté**
 - [ ] Analyse de position avec évaluation
 - [ ] Thèmes personnalisables
 - [ ] Sons et effets audio
 - [ ] Mode spectateur pour les parties en cours
+- [ ] Export/Import de parties (PGN)
+- [ ] Statistiques détaillées des joueurs
+- [ ] Mode tournoi
+
+## 🆕 Fonctionnalités Récentes
+
+### Version Actuelle
+- ✅ **Système de persistance complet** avec Entity Framework Core
+- ✅ **Sauvegarde des positions exactes** des pièces sur le plateau
+- ✅ **Interface de gestion des parties** sauvegardées
+- ✅ **Demande de match nul** avec confirmation entre joueurs
+- ✅ **Popup de confirmation** lors de la sauvegarde
+- ✅ **Fallback en mémoire** si la base de données n'est pas disponible
+- ✅ **Layout épuré** sans boutons inutiles
+- ✅ **Navigation robuste** avec gestion d'erreurs
+
+### Améliorations Techniques
+- **Architecture modulaire** avec services de données
+- **Gestion d'erreurs** robuste avec fallbacks
+- **Interface utilisateur** modernisée et simplifiée
+- **Base de données SQLite** pour la persistance locale
+- **Modèles de données** complets pour les parties et mouvements
 
 ## 📝 Licence
 
