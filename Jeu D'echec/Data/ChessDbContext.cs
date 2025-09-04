@@ -10,13 +10,15 @@ namespace Jeu_D_echec.Data
         public DbSet<SavedGame> SavedGames { get; set; }
         public DbSet<SavedChessMove> ChessMoves { get; set; }
         public DbSet<BoardState> BoardStates { get; set; }
+        public DbSet<Player> Players { get; set; }
+        public DbSet<GameResultInfo> GameResults { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Use SQLite database in local app data folder
-            var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ChessGame", "chess.db");
-            Directory.CreateDirectory(Path.GetDirectoryName(dbPath)!);
-            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+            // Use SQL Server LocalDB for development
+            // For production, you would typically use a connection string from configuration
+            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=ChessGameDB;Trusted_Connection=true;MultipleActiveResultSets=true";
+            optionsBuilder.UseSqlServer(connectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -77,6 +79,46 @@ namespace Jeu_D_echec.Data
                       .WithMany(s => s.BoardStates)
                       .HasForeignKey(b => b.SavedGameId)
                       .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Configure Player entity
+            modelBuilder.Entity<Player>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Email).IsRequired().HasMaxLength(200);
+                entity.Property(e => e.Rating).IsRequired();
+                entity.Property(e => e.CreatedDate).IsRequired();
+                entity.Property(e => e.LastPlayed).IsRequired();
+                
+                // Create unique index on email
+                entity.HasIndex(e => e.Email).IsUnique();
+            });
+
+            // Configure GameResultInfo entity
+            modelBuilder.Entity<GameResultInfo>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+
+                entity.Property(e => e.Result).IsRequired().HasConversion<string>();
+                entity.Property(e => e.WhiteRatingBefore).IsRequired();
+                entity.Property(e => e.WhiteRatingAfter).IsRequired();
+                entity.Property(e => e.BlackRatingBefore).IsRequired();
+                entity.Property(e => e.BlackRatingAfter).IsRequired();
+                entity.Property(e => e.MoveCount).IsRequired();
+                entity.Property(e => e.GameDuration).IsRequired();
+                entity.Property(e => e.PlayedDate).IsRequired();
+                
+                // Configure relationships with players
+                entity.HasOne(e => e.WhitePlayer)
+                      .WithMany()
+                      .HasForeignKey(e => e.WhitePlayerId)
+                      .OnDelete(DeleteBehavior.Restrict);
+                      
+                entity.HasOne(e => e.BlackPlayer)
+                      .WithMany()
+                      .HasForeignKey(e => e.BlackPlayerId)
+                      .OnDelete(DeleteBehavior.Restrict);
             });
         }
     }

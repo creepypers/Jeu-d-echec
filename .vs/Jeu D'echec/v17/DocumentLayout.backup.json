@@ -3,72 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\controls\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\controls\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\controls\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\controls\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\data\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\data\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\services\\simplegamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\services\\simplegamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\services\\entityframeworkgamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\services\\entityframeworkgamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\services\\igamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\services\\igamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\controls\\chessboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\controls\\chessboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\data\\savedgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\data\\savedgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\data\\chessmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\data\\chessmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\data\\boardstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\data\\boardstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\controls\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\controls\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\controls\\rankingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\controls\\rankingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\data\\chessdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\data\\chessdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Jeu D\u0027echec\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\controls\\chessboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\controls\\chessboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\controls\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\controls\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\services\\gamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\services\\gamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\models\\chessgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\models\\chessgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\controls\\chesssquare.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\controls\\chesssquare.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|c:\\users\\administrateur\\source\\repos\\jeu d\u0027echec\\jeu d\u0027echec\\controls\\chessboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A93FBE48-A7AA-47E4-B98D-A45585924D97}|Jeu D\u0027echec\\Jeu D\u0027echec.csproj|solutionrelative:jeu d\u0027echec\\controls\\chessboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Migrations\\20250904024011_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Jeu D\u0027echec\\Migrations\\20250904024011_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,223 +58,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SavedGame.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\SavedGame.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Data\\SavedGame.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\SavedGame.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Data\\SavedGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T21:04:09.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChessMove.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\ChessMove.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Data\\ChessMove.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\ChessMove.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Data\\ChessMove.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAcwCwAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T21:04:07.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EntityFrameworkGameDataService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Services\\EntityFrameworkGameDataService.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Services\\EntityFrameworkGameDataService.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Services\\EntityFrameworkGameDataService.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Services\\EntityFrameworkGameDataService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T21:03:52.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HomePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\HomePage.xaml.cs",
               "RelativeDocumentMoniker": "Jeu D\u0027echec\\Controls\\HomePage.xaml.cs",
               "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\HomePage.xaml.cs",
               "RelativeToolTip": "Jeu D\u0027echec\\Controls\\HomePage.xaml.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAqwGoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAArwK0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T20:30:54.066Z",
+              "WhenOpened": "2025-09-04T04:31:45.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SimpleGameDataService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Services\\SimpleGameDataService.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Services\\SimpleGameDataService.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Services\\SimpleGameDataService.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Services\\SimpleGameDataService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAIwCMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T21:06:03.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatabaseInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\DatabaseInitializer.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Data\\DatabaseInitializer.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\DatabaseInitializer.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Data\\DatabaseInitializer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA0wBkAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T21:08:32.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IGameDataService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Services\\IGameDataService.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Services\\IGameDataService.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Services\\IGameDataService.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Services\\IGameDataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T20:57:18.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ChessDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\ChessDbContext.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Data\\ChessDbContext.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\ChessDbContext.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Data\\ChessDbContext.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwDYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T20:57:14.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GamePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\GamePage.xaml.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Controls\\GamePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\GamePage.xaml.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Controls\\GamePage.xaml.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAIwMcAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T20:30:47.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GamePage.xaml",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\GamePage.xaml",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Controls\\GamePage.xaml",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\GamePage.xaml",
-              "RelativeToolTip": "Jeu D\u0027echec\\Controls\\GamePage.xaml",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Jeu D\u0027echec\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\MainWindow.xaml",
+              "RelativeToolTip": "Jeu D\u0027echec\\MainWindow.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-03T20:35:17.04Z",
+              "WhenOpened": "2025-09-04T04:05:29.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAiwEkAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T20:35:01.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GameDataService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Services\\GameDataService.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Services\\GameDataService.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Services\\GameDataService.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Services\\GameDataService.cs",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAUwN4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T20:30:56.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.g.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\MainWindow.g.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\MainWindow.g.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\MainWindow.g.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\MainWindow.g.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T20:37:09.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ChessBoard.xaml",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\ChessBoard.xaml",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Controls\\ChessBoard.xaml",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\ChessBoard.xaml",
-              "RelativeToolTip": "Jeu D\u0027echec\\Controls\\ChessBoard.xaml",
-              "ViewState": "AgIAADIAAAAAAAAAAAAiwEMAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-03T18:24:53.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ChessGame.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Models\\ChessGame.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Models\\ChessGame.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Models\\ChessGame.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Models\\ChessGame.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAowBwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T20:22:42.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ChessSquare.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\ChessSquare.xaml.cs",
-              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Controls\\ChessSquare.xaml.cs",
-              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\ChessSquare.xaml.cs",
-              "RelativeToolTip": "Jeu D\u0027echec\\Controls\\ChessSquare.xaml.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAcwIoAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T19:51:29.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 3,
               "Title": "ChessBoard.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\ChessBoard.xaml.cs",
               "RelativeDocumentMoniker": "Jeu D\u0027echec\\Controls\\ChessBoard.xaml.cs",
               "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\ChessBoard.xaml.cs",
               "RelativeToolTip": "Jeu D\u0027echec\\Controls\\ChessBoard.xaml.cs",
-              "ViewState": "AgIAAEEBAAAAAAAAAAAqwEoBAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAANsBAAAAAAAAAAAcwOMBAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T19:12:18.388Z",
+              "WhenOpened": "2025-09-04T03:40:27.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GamePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\GamePage.xaml.cs",
+              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Controls\\GamePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\GamePage.xaml.cs*",
+              "RelativeToolTip": "Jeu D\u0027echec\\Controls\\GamePage.xaml.cs*",
+              "ViewState": "AgIAAJsBAAAAAAAAAAAUwKIBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T03:22:27.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SavedGame.cs",
+              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\SavedGame.cs",
+              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Data\\SavedGame.cs",
+              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\SavedGame.cs",
+              "RelativeToolTip": "Jeu D\u0027echec\\Data\\SavedGame.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T03:22:08.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BoardState.cs",
+              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\BoardState.cs",
+              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Data\\BoardState.cs",
+              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Data\\BoardState.cs",
+              "RelativeToolTip": "Jeu D\u0027echec\\Data\\BoardState.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowBwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T03:21:29.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RankingPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\RankingPage.xaml",
+              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Controls\\RankingPage.xaml",
+              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Controls\\RankingPage.xaml",
+              "RelativeToolTip": "Jeu D\u0027echec\\Controls\\RankingPage.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-04T02:53:18.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250904024011_initial.cs",
+              "DocumentMoniker": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Migrations\\20250904024011_initial.cs",
+              "RelativeDocumentMoniker": "Jeu D\u0027echec\\Migrations\\20250904024011_initial.cs",
+              "ToolTip": "C:\\Users\\Administrateur\\source\\repos\\Jeu D\u0027echec\\Jeu D\u0027echec\\Migrations\\20250904024011_initial.cs",
+              "RelativeToolTip": "Jeu D\u0027echec\\Migrations\\20250904024011_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T02:40:11.504Z",
               "EditorCaption": ""
             }
           ]

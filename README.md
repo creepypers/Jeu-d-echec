@@ -26,9 +26,9 @@ Un jeu d'échecs complet et moderne développé avec WinUI 3, doté d'animations
 - **Animations de capture** avec rotation et réduction
 - **Historique des coups** en temps réel
 - **Boutons de contrôle** : Sauvegarder, Demander match nul, Retour au menu
-
+ 
 ### 💾 Persistance de Données
-- **Base de données SQLite** avec Entity Framework Core
+- **Base de données SQL Server** avec Entity Framework Core
 - **Sauvegarde automatique** des positions des pièces
 - **Chargement de parties** avec restauration exacte de l'état
 - **Gestion des parties sauvegardées** avec interface dédiée
@@ -96,9 +96,15 @@ dotnet run
 ```
 
 ### Base de Données
-L'application utilise SQLite avec Entity Framework Core. La base de données est automatiquement créée au premier lancement dans :
+L'application utilise SQL Server LocalDB avec Entity Framework Core. La base de données est automatiquement créée au premier lancement.
+
+**Prérequis pour la base de données :**
+- SQL Server LocalDB (inclus avec Visual Studio)
+- Ou SQL Server Express/Standard/Enterprise
+
+**Chaîne de connexion :**
 ```
-%LocalAppData%\ChessGame\chess.db
+Server=(localdb)\mssqllocaldb;Database=ChessGameDB;Trusted_Connection=true;MultipleActiveResultSets=true
 ```
 
 ## 🎨 Design et UX
@@ -137,7 +143,7 @@ Jeu D'echec/
 - **C# 12** : Langage de programmation avec nullable reference types
 - **XAML** : Déclaration d'interface utilisateur
 - **Entity Framework Core** : ORM pour la persistance de données
-- **SQLite** : Base de données locale
+- **SQL Server** : Base de données relationnelle (LocalDB pour le développement)
 - **MVVM Pattern** : Architecture modulaire
 
 ## 🎯 Fonctionnalités Futures

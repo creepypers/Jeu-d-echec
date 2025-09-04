@@ -22,33 +22,7 @@
         <Frame x:ConnectionId='3' x:Name="MainFrame" 
                                                     />
 
-        <!-- Game Controls (only visible during game) -->
-        <Grid x:ConnectionId='4' x:Name="GameControlsGrid" 
-              VerticalAlignment="Bottom" 
-              Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
-              BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
-              BorderThickness="0,1,0,0"
-              Padding="20,10"
-              Visibility="Collapsed">
-            <StackPanel Orientation="Horizontal" 
-                        HorizontalAlignment="Center" 
-                        Spacing="20">
-                <TextBlock x:ConnectionId='5' x:Name="StatusText" 
-                           Text="Tour des blancs" 
-                           FontSize="16" 
-                           FontWeight="Medium"
-                           Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
-                <Button x:ConnectionId='6' Content="Sauvegarder" 
-                                                   
-                        Style="{StaticResource AccentButtonStyle}"/>
-                <Button x:ConnectionId='7' Content="Retour au menu" 
-                                                     
-                        Style="{StaticResource DefaultButtonStyle}"/>
-                <Button x:ConnectionId='8' Content="Annuler" 
-                                               
-                        Style="{StaticResource DefaultButtonStyle}"/>
-            </StackPanel>
-        </Grid>
+
     </Grid>
 </Window>
 

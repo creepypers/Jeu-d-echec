@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="Jeu_D_echec.Controls.RankingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jeu_D_echec.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style x:Key="TitleTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="36"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{ThemeResource AccentTextFillColorPrimaryBrush}"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,20"/>
+        </Style>
+        
+    </UserControl.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                      HorizontalScrollBarVisibility="Disabled"
+                      Padding="20">
+            
+            <!-- Main Container -->
+            <Grid MaxWidth="1000" 
+                  HorizontalAlignment="Center"
+                  Margin="0,20,0,20">
+                
+              
+                
+                <!-- Rankings Table -->
+                <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                        BorderThickness="1"
+                        CornerRadius="16"
+                        Padding="20">
+                    
+                    <StackPanel Spacing="20">
+                        <!-- Table Header -->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>  <!-- Rank -->
+                                <ColumnDefinition Width="*"/>   <!-- Player -->
+                                <ColumnDefinition Width="100"/> <!-- Rating -->
+                                <ColumnDefinition Width="90"/>  <!-- Games -->
+                                <ColumnDefinition Width="90"/>  <!-- Win Rate -->
+                                <ColumnDefinition Width="110"/> <!-- Category -->
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Column="0" Text="Rang" FontWeight="Bold" FontSize="14"/>
+                            <TextBlock Grid.Column="1" Text="Joueur" FontWeight="Bold" FontSize="14"/>
+                            <TextBlock Grid.Column="2" Text="ELO" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Column="3" Text="Parties" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Column="4" Text="Victoires" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Column="5" Text="Catégorie" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center"/>
+                        </Grid>
+                        
+                        <!-- Rankings List -->
+                        <ListView x:ConnectionId='3' x:Name="RankingsListView" 
+                                  Background="Transparent"
+                                  BorderThickness="0"
+                                  SelectionMode="Single">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                                            CornerRadius="8"
+                                            Margin="0,0,0,8"
+                                            Padding="15">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="60"/>  <!-- Rank -->
+                                                <ColumnDefinition Width="*"/>   <!-- Player -->
+                                                <ColumnDefinition Width="100"/> <!-- Rating -->
+                                                <ColumnDefinition Width="90"/>  <!-- Games -->
+                                                <ColumnDefinition Width="90"/>  <!-- Win Rate -->
+                                                <ColumnDefinition Width="110"/> <!-- Category -->
+                                            </Grid.ColumnDefinitions>
+                                            
+                                            <!-- Rank -->
+                                            <TextBlock Grid.Column="0" 
+                                                       Text="{Binding Rank}" 
+                                                       FontWeight="Bold"
+                                                       FontSize="16"
+                                                       Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"
+                                                       VerticalAlignment="Center"/>
+                                            
+                                            <!-- Player Info -->
+                                            <StackPanel Grid.Column="1" Spacing="4">
+                                                <TextBlock Text="{Binding Name}" 
+                                                           FontWeight="SemiBold"
+                                                           FontSize="16"
+                                                           Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
+                                                <TextBlock Text="{Binding Email}" 
+                                                           FontSize="12"
+                                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                                            </StackPanel>
+                                            
+                                            <!-- Rating -->
+                                            <TextBlock Grid.Column="2" 
+                                                       Text="{Binding CurrentRating}" 
+                                                       FontWeight="Bold"
+                                                       FontSize="16"
+                                                       Foreground="{Binding RatingColor}"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"/>
+                                            
+                                            <!-- Games Played -->
+                                            <TextBlock Grid.Column="3" 
+                                                       Text="{Binding TotalGamesPlayed}" 
+                                                       FontSize="14"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"/>
+                                            
+                                            <!-- Win Rate -->
+                                            <TextBlock Grid.Column="4" 
+                                                       Text="{Binding WinRateText}" 
+                                                       FontSize="14"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"/>
+                                            
+                                            <!-- Category -->
+                                            <Border Grid.Column="5" 
+                                                    Background="{Binding CategoryColor}"
+                                                    CornerRadius="12"
+                                                    Padding="8,4"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding Category}" 
+                                                           FontSize="10"
+                                                           FontWeight="SemiBold"
+                                                           Foreground="White"
+                                                           HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        
+                        <!-- No Data Message -->
+                        <TextBlock x:ConnectionId='4' x:Name="NoDataText" 
+                                   Text="Aucun joueur trouvé"
+                                   FontSize="16"
+                                   Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Visibility="Collapsed"/>
+                    </StackPanel>
+                </Border>
+                
+                <!-- Back Button -->
+                <Button x:ConnectionId='2' x:Name="BackButton" 
+                        Content="Retour au menu"
+                        Style="{StaticResource DefaultButtonStyle}"
+                        HorizontalAlignment="Center"
+                        Margin="0,30,0,0"
+                        Padding="20,10"
+                                           />
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
+

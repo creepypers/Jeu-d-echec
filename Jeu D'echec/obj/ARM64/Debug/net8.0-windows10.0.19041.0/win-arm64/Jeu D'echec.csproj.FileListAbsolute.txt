@@ -1,17 +1,95 @@
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.exe
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.csproj.AssemblyReference.cache
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\JeuDechec.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\refint\JeuDechec.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\JeuDechec.pdb
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\App.g.i.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\App.g.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessBoard.g.i.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessBoard.g.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessSquare.g.i.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessSquare.g.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\GamePage.g.i.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\GamePage.g.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\HomePage.g.i.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\HomePage.g.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\PawnPromotionDialog.g.i.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\PawnPromotionDialog.g.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\RankingPage.g.i.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\RankingPage.g.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MainWindow.g.i.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MainWindow.g.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\XamlTypeInfo.g.cs
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\App.xaml
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessBoard.xaml
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessSquare.xaml
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\HomePage.xaml
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MainWindow.xaml
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\GamePage.xaml
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\PawnPromotionDialog.xaml
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\RankingPage.xaml
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\App.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessBoard.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessSquare.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\HomePage.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MainWindow.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\GamePage.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\PawnPromotionDialog.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\RankingPage.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\XamlSaveStateFile.xml
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\JeuDechec.exe
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\App.xbf
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessBoard.xbf
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessSquare.xbf
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\GamePage.xbf
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\HomePage.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\PawnPromotionDialog.xbf
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\RankingPage.xbf
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MainWindow.xbf
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.deps.json
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.runtimeconfig.json
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.dll
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.pdb
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\JeuDechec.deps.json
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\JeuDechec.runtimeconfig.json
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\JeuDechec.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\JeuDechec.pdb
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\resources.pri
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\AppxManifest.xml
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Web.WebView2.Core.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Azure.Core.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Azure.Identity.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Humanizer.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Build.Locator.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.CodeAnalysis.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Data.SqlClient.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.EntityFrameworkCore.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.Logging.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.Options.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Extensions.Primitives.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Identity.Client.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.SqlServer.Server.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Win32.SystemEvents.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Graphics.Imaging.Projection.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.InteractiveExperiences.Projection.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Security.Authentication.OAuth.Projection.dll
@@ -37,6 +115,93 @@ C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Windows.System.Projection.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Windows.Widgets.Projection.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Mono.TextTemplating.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.ClientModel.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.CodeDom.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Composition.AttributedModel.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Composition.Convention.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Composition.Hosting.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Composition.Runtime.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Composition.TypedParts.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Configuration.ConfigurationManager.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Drawing.Common.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Formats.Asn1.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.IO.Pipelines.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Memory.Data.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Runtime.Caching.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Security.Permissions.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Text.Encodings.Web.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Text.Json.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Windows.Extensions.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\WebView2Loader.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.WindowsAppRuntime.Bootstrap.dll
@@ -66,7 +231,6 @@ C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Data.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Diagnostics.Contracts.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Diagnostics.Debug.dll
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Diagnostics.FileVersionInfo.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Diagnostics.Process.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Diagnostics.StackTrace.dll
@@ -77,7 +241,6 @@ C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Drawing.Primitives.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Drawing.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Dynamic.Runtime.dll
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Formats.Asn1.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Formats.Tar.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Globalization.Calendars.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Globalization.Extensions.dll
@@ -176,8 +339,6 @@ C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Text.Encoding.CodePages.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Text.Encoding.Extensions.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Text.Encoding.dll
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Text.Encodings.Web.dll
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Text.Json.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Text.RegularExpressions.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Threading.Channels.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\System.Threading.Overlapped.dll
@@ -225,43 +386,13 @@ C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Windows.SDK.NET.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\WinRT.Runtime.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\bin\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Microsoft.Web.WebView2.Core.Projection.dll
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.csproj.AssemblyReference.cache
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\App.g.i.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\App.g.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessBoard.g.i.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessBoard.g.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessSquare.g.i.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessSquare.g.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\GamePage.g.i.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\GamePage.g.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\HomePage.g.i.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\HomePage.g.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MainWindow.g.i.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MainWindow.g.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\XamlTypeInfo.g.cs
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\App.xaml
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessBoard.xaml
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessSquare.xaml
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\GamePage.xaml
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\HomePage.xaml
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MainWindow.xaml
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\App.xbf
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessBoard.xbf
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\ChessSquare.xbf
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\GamePage.xbf
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Controls\HomePage.xbf
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MainWindow.xbf
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\XamlSaveStateFile.xml
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.AssemblyInfoInputs.cache
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.AssemblyInfo.cs
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.sourcelink.json
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'ec.A0B89FF9.Up2Date
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.dll
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\refint\Jeu D'echec.dll
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.pdb
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.genruntimeconfig.cache
-C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ref\Jeu D'echec.dll
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ref\JeuDechec.dll
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\priconfig.xml
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\priconfig.xml.intermediate
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\unfiltered.layout.resfiles
@@ -277,4 +408,5 @@ C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\qualifiers.txt
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\qualifiers.txt.intermediate
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\Jeu D'echec.genpublishdeps.cache
 C:\Users\Administrateur\source\repos\Jeu D'echec\Jeu D'echec\obj\ARM64\Debug\net8.0-windows10.0.19041.0\win-arm64\ProjectArchitectures.txt

@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System;
 using System.Collections.Generic;
+using Jeu_D_echec.Data;
 
 namespace Jeu_D_echec.Models
 {

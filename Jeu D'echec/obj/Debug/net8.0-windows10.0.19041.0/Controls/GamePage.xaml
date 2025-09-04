@@ -25,7 +25,7 @@
             <!-- Player 1 Info -->
             <StackPanel Grid.Column="0" 
                         HorizontalAlignment="Left">
-                <TextBlock x:ConnectionId='12' x:Name="Player1NameText" 
+                <TextBlock x:ConnectionId='15' x:Name="Player1NameText" 
                            Text="Joueur Blanc"
                            FontSize="18" 
                            FontWeight="SemiBold"
@@ -38,13 +38,13 @@
             <!-- Game Status -->
             <StackPanel Grid.Column="1" 
                         HorizontalAlignment="Center">
-                <TextBlock x:ConnectionId='10' x:Name="GameStatusText" 
+                <TextBlock x:ConnectionId='13' x:Name="GameStatusText" 
                            Text="En cours"
                            FontSize="16" 
                            FontWeight="Medium"
                            Foreground="{ThemeResource TextFillColorPrimaryBrush}"
                            HorizontalAlignment="Center"/>
-                <TextBlock x:ConnectionId='11' x:Name="MoveCountText" 
+                <TextBlock x:ConnectionId='14' x:Name="MoveCountText" 
                            Text="Coup 0"
                            FontSize="12"
                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
@@ -54,7 +54,7 @@
             <!-- Player 2 Info -->
             <StackPanel Grid.Column="2" 
                         HorizontalAlignment="Right">
-                <TextBlock x:ConnectionId='9' x:Name="Player2NameText" 
+                <TextBlock x:ConnectionId='12' x:Name="Player2NameText" 
                            Text="Joueur Noir"
                            FontSize="18" 
                            FontWeight="SemiBold"
@@ -71,7 +71,7 @@
         <Grid HorizontalAlignment="Center" 
               VerticalAlignment="Center"
               Margin="0,20,0,100">
-            <local:ChessBoard x:ConnectionId='8' x:Name="ChessBoardControl" 
+            <local:ChessBoard x:ConnectionId='11' x:Name="ChessBoardControl" 
                              Width="600" 
                              Height="600"/>
         </Grid>
@@ -84,11 +84,35 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Margin="0,100,0,0">
-            <TextBlock x:ConnectionId='7' x:Name="CurrentPlayerText" 
+            <TextBlock x:ConnectionId='10' x:Name="CurrentPlayerText" 
                        Text="Tour des blancs"
                        FontSize="14"
                        FontWeight="SemiBold"
                        Foreground="White"/>
+        </Border>
+
+        <!-- Game State Alert -->
+        <Border x:ConnectionId='4' x:Name="GameStateAlert" 
+                Background="{ThemeResource SystemFillColorCriticalBrush}"
+                CornerRadius="12"
+                Padding="20,15"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="0,150,0,0"
+                Visibility="Collapsed">
+            <StackPanel HorizontalAlignment="Center" Spacing="8">
+                <TextBlock x:ConnectionId='8' x:Name="GameStateTitle" 
+                           Text="Échec !"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='9' x:Name="GameStateMessage" 
+                           Text="Votre roi est en échec"
+                           FontSize="14"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
         </Border>
 
         <!-- Game Control Buttons -->
@@ -98,19 +122,19 @@
                     Margin="0,0,0,20"
                     Spacing="15">
             
-            <Button x:ConnectionId='4' x:Name="RequestDrawButton" 
+            <Button x:ConnectionId='5' x:Name="RequestDrawButton" 
                     Content="Demander match nul"
                                               
                     Style="{StaticResource DefaultButtonStyle}"
                     Padding="15,8"/>
             
-            <Button x:ConnectionId='5' x:Name="SaveGameButton" 
+            <Button x:ConnectionId='6' x:Name="SaveGameButton" 
                     Content="Sauvegarder"
                                            
                     Style="{StaticResource AccentButtonStyle}"
                     Padding="15,8"/>
             
-            <Button x:ConnectionId='6' x:Name="BackToMenuButton" 
+            <Button x:ConnectionId='7' x:Name="BackToMenuButton" 
                     Content="Retour au menu"
                                              
                     Style="{StaticResource DefaultButtonStyle}"

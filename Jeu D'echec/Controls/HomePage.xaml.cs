@@ -4,10 +4,7 @@ using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.IO;
-using System.Text.Json;
 using System.Threading.Tasks;
-using Windows.Storage;
 using Jeu_D_echec.Models;
 using Jeu_D_echec.Services;
 
@@ -17,6 +14,7 @@ namespace Jeu_D_echec.Controls
     {
         public event EventHandler<StartNewGameEventArgs>? StartNewGameRequested;
         public event EventHandler<ResumeGameEventArgs>? ResumeGameRequested;
+        public event EventHandler? ViewRankingsRequested;
 
         private ObservableCollection<SavedGameInfo> _savedGames;
         private readonly IGameDataService _dataService;
@@ -27,19 +25,15 @@ namespace Jeu_D_echec.Controls
             _savedGames = new ObservableCollection<SavedGameInfo>();
             SavedGamesListView.ItemsSource = _savedGames;
             
-            try
-            {
-                _dataService = new EntityFrameworkGameDataService();
-                System.Diagnostics.Debug.WriteLine("Using Entity Framework service");
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine($"Entity Framework failed, falling back to simple service: {ex.Message}");
-                _dataService = new SimpleGameDataService();
-            }
+            _dataService = new EntityFrameworkGameDataService();
         }
 
         public void LoadOnStart()
+        {
+            LoadSavedGames();
+        }
+
+        public void RefreshSavedGames()
         {
             LoadSavedGames();
         }
@@ -80,6 +74,11 @@ namespace Jeu_D_echec.Controls
             };
 
             StartNewGameRequested?.Invoke(this, new StartNewGameEventArgs(gameInfo));
+        }
+
+        private void OnViewRankingsClick(object sender, RoutedEventArgs e)
+        {
+            ViewRankingsRequested?.Invoke(this, EventArgs.Empty);
         }
 
         private void OnResumeGameClick(object sender, RoutedEventArgs e)
@@ -130,7 +129,6 @@ namespace Jeu_D_echec.Controls
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Error loading saved games: {ex.Message}");
                 ShowMessage("Erreur lors du chargement des parties sauvegardées.");
             }
         }
@@ -155,22 +153,52 @@ namespace Jeu_D_echec.Controls
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Error deleting saved game: {ex.Message}");
                 ShowMessage("Erreur lors de la suppression de la partie.");
+            }
+        }
+
+        private async void OnCleanupDuplicatesClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // Show loading state
+                CleanupDuplicatesButton.Content = "Nettoyage...";
+                CleanupDuplicatesButton.IsEnabled = false;
+
+                // Call the cleanup method
+                if (_dataService is EntityFrameworkGameDataService efService)
+                {
+                    await efService.CleanupDuplicateGamesAsync();
+
+                    // Refresh the saved games list
+                     LoadSavedGames();
+                    
+                    // Show success message
+                    ShowMessage("Doublons nettoyés avec succès !");
+                }
+                else
+                {
+                    ShowMessage("Nettoyage des doublons non disponible.");
+                }
+            }
+            catch (Exception ex)
+            {
+                ShowMessage("Erreur lors du nettoyage des doublons.");
+            }
+            finally
+            {
+                // Restore button state
+                CleanupDuplicatesButton.Content = "Nettoyer les doublons";
+                CleanupDuplicatesButton.IsEnabled = true;
             }
         }
 
         private void ShowMessage(string message)
         {
             // Simple message display - in a real app, you might want to use a proper dialog
-            System.Diagnostics.Debug.WriteLine($"Message: {message}");
             // TODO: Implement proper message display (ContentDialog or Toast)
         }
 
-        public void RefreshSavedGames()
-        {
-            LoadSavedGames();
-        }
     }
 
     // Event Args Classes
@@ -199,6 +227,9 @@ namespace Jeu_D_echec.Controls
     {
         public string Player1Name { get; set; } = "";
         public string Player2Name { get; set; } = "";
+        public string Player1Email { get; set; } = "";
+        public string Player2Email { get; set; } = "";
+
         public DateTime CreatedDate { get; set; }
         public DateTime LastPlayed { get; set; }
         public PieceColor CurrentPlayer { get; set; } = PieceColor.White;

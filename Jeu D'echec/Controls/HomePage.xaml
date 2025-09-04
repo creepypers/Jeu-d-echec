@@ -88,6 +88,11 @@
                                 Content="Commencer une nouvelle partie"
                                 Style="{StaticResource ButtonStyle}"
                                 Click="OnStartNewGameClick"/>
+                        
+                        <Button x:Name="ViewRankingsButton" 
+                                Content="Voir les classements"
+                                Style="{StaticResource AccentButtonStyle}"
+                                Click="OnViewRankingsClick"/>
                     </StackPanel>
                 </Border>
                 
@@ -105,9 +110,19 @@
                                    FontWeight="SemiBold"
                                    Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
                         
-                        <TextBlock Text="Reprenez une partie en cours :" 
-                                   FontSize="16"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="Reprenez une partie en cours :" 
+                                       FontSize="16"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       VerticalAlignment="Center"/>
+                            
+                            <Button x:Name="CleanupDuplicatesButton" 
+                                    Content="Nettoyer les doublons"
+                                    Style="{StaticResource DefaultButtonStyle}"
+                                    Click="OnCleanupDuplicatesClick"
+                                    Padding="15,8"
+                                    FontSize="14"/>
+                        </StackPanel>
                         
                         <!-- Saved Games List -->
                         <ListView x:Name="SavedGamesListView" 

@@ -91,6 +91,30 @@
                        Foreground="White"/>
         </Border>
 
+        <!-- Game State Alert -->
+        <Border x:Name="GameStateAlert" 
+                Background="{ThemeResource SystemFillColorCriticalBrush}"
+                CornerRadius="12"
+                Padding="20,15"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="0,150,0,0"
+                Visibility="Collapsed">
+            <StackPanel HorizontalAlignment="Center" Spacing="8">
+                <TextBlock x:Name="GameStateTitle" 
+                           Text="Échec !"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:Name="GameStateMessage" 
+                           Text="Votre roi est en échec"
+                           FontSize="14"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
         <!-- Game Control Buttons -->
         <StackPanel Orientation="Horizontal" 
                     HorizontalAlignment="Center" 

@@ -76,17 +76,22 @@
                                    FontSize="16"
                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
                         
-                        <TextBox x:ConnectionId='9' x:Name="Player1NameTextBox" 
+                        <TextBox x:ConnectionId='7' x:Name="Player1NameTextBox" 
                                  PlaceholderText="Nom du joueur blanc (ex: Alice)"
                                  Style="{StaticResource InputTextStyle}"/>
                         
-                        <TextBox x:ConnectionId='10' x:Name="Player2NameTextBox" 
+                        <TextBox x:ConnectionId='8' x:Name="Player2NameTextBox" 
                                  PlaceholderText="Nom du joueur noir (ex: Bob)"
                                  Style="{StaticResource InputTextStyle}"/>
                         
-                        <Button x:ConnectionId='11' x:Name="StartNewGameButton" 
+                        <Button x:ConnectionId='9' x:Name="StartNewGameButton" 
                                 Content="Commencer une nouvelle partie"
                                 Style="{StaticResource ButtonStyle}"
+                                                           />
+                        
+                        <Button x:ConnectionId='10' x:Name="ViewRankingsButton" 
+                                Content="Voir les classements"
+                                Style="{StaticResource AccentButtonStyle}"
                                                            />
                     </StackPanel>
                 </Border>
@@ -110,7 +115,7 @@
                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
                         
                         <!-- Saved Games List -->
-                        <ListView x:ConnectionId='4' x:Name="SavedGamesListView" 
+                        <ListView x:ConnectionId='2' x:Name="SavedGamesListView" 
                                   Height="200"
                                   SelectionMode="Single"
                                   Margin="0,10,0,0">
@@ -129,20 +134,20 @@
                                             <TextBlock Text="{Binding PlayerInfo}" 
                                                        FontSize="14"
                                                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
-                                                                                         <TextBlock Text="{Binding LastPlayedText}" 
-                                                        FontSize="12"
-                                                        Foreground="{ThemeResource TextFillColorTertiaryBrush}"/>
+                                            <TextBlock Text="{Binding LastPlayedText}" 
+                                                       FontSize="12"
+                                                       Foreground="{ThemeResource TextFillColorTertiaryBrush}"/>
                                         </StackPanel>
                                         
                                         <StackPanel Grid.Column="1" 
                                                     Orientation="Horizontal" 
                                                     Spacing="10">
-                                            <Button x:ConnectionId='7' Content="Reprendre" 
+                                            <Button x:ConnectionId='5' Content="Reprendre" 
                                                                              
                                                     Tag="{Binding}"
                                                     Style="{StaticResource AccentButtonStyle}"
                                                     Padding="15,8"/>
-                                            <Button x:ConnectionId='8' Content="Supprimer" 
+                                            <Button x:ConnectionId='6' Content="Supprimer" 
                                                                              
                                                     Tag="{Binding}"
                                                     Style="{StaticResource DefaultButtonStyle}"
@@ -153,7 +158,7 @@
                             </ListView.ItemTemplate>
                         </ListView>
                         
-                        <TextBlock x:ConnectionId='5' x:Name="NoSavedGamesText" 
+                        <TextBlock x:ConnectionId='3' x:Name="NoSavedGamesText" 
                                    Text="Aucune partie sauvegardée"
                                    FontSize="14"
                                    Foreground="{ThemeResource TextFillColorTertiaryBrush}"
@@ -162,21 +167,6 @@
                                    Visibility="Collapsed"/>
                     </StackPanel>
                 </Border>
-                
-                <!-- Quick Actions -->
-                <StackPanel Orientation="Horizontal" 
-                            HorizontalAlignment="Center" 
-                            Spacing="20"
-                            Margin="0,30,0,0">
-                    
-                    <Button x:ConnectionId='2' Content="Règles du jeu" 
-                                                    
-                            Style="{StaticResource ButtonStyle}"/>
-                    
-                    <Button x:ConnectionId='3' Content="Paramètres" 
-                                                       
-                            Style="{StaticResource ButtonStyle}"/>
-                </StackPanel>
             </StackPanel>
         </Grid>
     </ScrollViewer>

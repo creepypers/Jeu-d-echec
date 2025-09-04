@@ -3,4 +3,6 @@ Controls\ChessBoard.xbf
 Controls\ChessSquare.xbf
 Controls\GamePage.xbf
 Controls\HomePage.xbf
+Controls\PawnPromotionDialog.xbf
+Controls\RankingPage.xbf
 MainWindow.xbf

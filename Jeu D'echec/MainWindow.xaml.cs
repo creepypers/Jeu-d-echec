@@ -29,6 +29,7 @@ namespace Jeu_D_echec
     {
         private HomePage? _homePage;
         private GamePage? _currentGamePage;
+        private RankingPage? _rankingPage;
 
         public MainWindow()
         {
@@ -69,6 +70,7 @@ namespace Jeu_D_echec
                     _homePage = new HomePage();
                     _homePage.StartNewGameRequested += OnStartNewGameRequested;
                     _homePage.ResumeGameRequested += OnResumeGameRequested;
+                    _homePage.ViewRankingsRequested += OnViewRankingsRequested;
                 }
 
                 // Instead of navigation, set content directly since HomePage is a UserControl
@@ -111,6 +113,7 @@ namespace Jeu_D_echec
 
             _currentGamePage = new GamePage();
             _currentGamePage.BackToMenuRequested += OnBackToMenuRequested;
+            _currentGamePage.GameSaved += OnGameSaved;
 
             // Initialize the game page with the parameter
             if (parameter is GameInfo gameInfo)
@@ -140,9 +143,45 @@ namespace Jeu_D_echec
 
 
 
+        private void OnViewRankingsRequested(object? sender, EventArgs e)
+        {
+            NavigateToRankingPage();
+        }
+
+        private void NavigateToRankingPage()
+        {
+            if (MainFrame == null) return;
+
+            if (_rankingPage == null)
+            {
+                _rankingPage = new RankingPage();
+                _rankingPage.BackRequested += OnRankingBackRequested;
+            }
+
+            MainFrame.Content = _rankingPage;
+        }
+
+        private void OnRankingBackRequested(object? sender, EventArgs e)
+        {
+            NavigateToHomePage();
+            if (_homePage != null)
+            {
+                _homePage.RefreshSavedGames();
+            }
+        }
+
         private void OnBackToMenuRequested(object? sender, RoutedEventArgs e)
         {
             NavigateToHomePage();
+            if (_homePage != null)
+            {
+                _homePage.RefreshSavedGames();
+            }
+        }
+
+        private void OnGameSaved(object? sender, RoutedEventArgs e)
+        {
+            // Refresh saved games list when a game is saved
             if (_homePage != null)
             {
                 _homePage.RefreshSavedGames();

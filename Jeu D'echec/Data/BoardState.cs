@@ -1,7 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System;
+using Jeu_D_echec.Models;
 
-namespace Jeu_D_echec.Models
+namespace Jeu_D_echec.Data
 {
     public class BoardState
     {

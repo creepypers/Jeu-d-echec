@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Jeu D\'echec")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("JeuDechec")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Jeu D\'echec")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Jeu D\'echec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebffbd0404d5f5a4af74ee83e7d99e08001e9190")]
+[assembly: System.Reflection.AssemblyProductAttribute("JeuDechec")]
+[assembly: System.Reflection.AssemblyTitleAttribute("JeuDechec")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows10.0.19041.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows10.0.17763.0")]

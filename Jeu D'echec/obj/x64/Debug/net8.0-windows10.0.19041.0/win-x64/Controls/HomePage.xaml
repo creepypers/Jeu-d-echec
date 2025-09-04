@@ -76,17 +76,22 @@
                                    FontSize="16"
                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
                         
-                        <TextBox x:ConnectionId='7' x:Name="Player1NameTextBox" 
+                        <TextBox x:ConnectionId='8' x:Name="Player1NameTextBox" 
                                  PlaceholderText="Nom du joueur blanc (ex: Alice)"
                                  Style="{StaticResource InputTextStyle}"/>
                         
-                        <TextBox x:ConnectionId='8' x:Name="Player2NameTextBox" 
+                        <TextBox x:ConnectionId='9' x:Name="Player2NameTextBox" 
                                  PlaceholderText="Nom du joueur noir (ex: Bob)"
                                  Style="{StaticResource InputTextStyle}"/>
                         
-                        <Button x:ConnectionId='9' x:Name="StartNewGameButton" 
+                        <Button x:ConnectionId='10' x:Name="StartNewGameButton" 
                                 Content="Commencer une nouvelle partie"
                                 Style="{StaticResource ButtonStyle}"
+                                                           />
+                        
+                        <Button x:ConnectionId='11' x:Name="ViewRankingsButton" 
+                                Content="Voir les classements"
+                                Style="{StaticResource AccentButtonStyle}"
                                                            />
                     </StackPanel>
                 </Border>
@@ -105,9 +110,19 @@
                                    FontWeight="SemiBold"
                                    Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
                         
-                        <TextBlock Text="Reprenez une partie en cours :" 
-                                   FontSize="16"
-                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="Reprenez une partie en cours :" 
+                                       FontSize="16"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       VerticalAlignment="Center"/>
+                            
+                            <Button x:ConnectionId='7' x:Name="CleanupDuplicatesButton" 
+                                    Content="Nettoyer les doublons"
+                                    Style="{StaticResource DefaultButtonStyle}"
+                                                                    
+                                    Padding="15,8"
+                                    FontSize="14"/>
+                        </StackPanel>
                         
                         <!-- Saved Games List -->
                         <ListView x:ConnectionId='2' x:Name="SavedGamesListView" 

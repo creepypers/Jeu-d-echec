@@ -226,7 +226,7 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[24];
+            _typeNameTable = new string[27];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -241,18 +241,21 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
             _typeNameTable[11] = "Microsoft.UI.Xaml.Media.Brush";
             _typeNameTable[12] = "Jeu_D_echec.Controls.GamePage";
             _typeNameTable[13] = "Jeu_D_echec.Controls.HomePage";
-            _typeNameTable[14] = "Microsoft.UI.Xaml.Media.MicaBackdrop";
-            _typeNameTable[15] = "Microsoft.UI.Xaml.Media.SystemBackdrop";
-            _typeNameTable[16] = "Microsoft.UI.Composition.SystemBackdrops.MicaKind";
-            _typeNameTable[17] = "System.Enum";
-            _typeNameTable[18] = "Jeu_D_echec.MainWindow";
-            _typeNameTable[19] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[20] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[21] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[22] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[23] = "Int32";
+            _typeNameTable[14] = "Jeu_D_echec.Controls.PawnPromotionDialog";
+            _typeNameTable[15] = "Jeu_D_echec.Models.PieceColor";
+            _typeNameTable[16] = "System.Enum";
+            _typeNameTable[17] = "Jeu_D_echec.Controls.RankingPage";
+            _typeNameTable[18] = "Microsoft.UI.Xaml.Media.MicaBackdrop";
+            _typeNameTable[19] = "Microsoft.UI.Xaml.Media.SystemBackdrop";
+            _typeNameTable[20] = "Microsoft.UI.Composition.SystemBackdrops.MicaKind";
+            _typeNameTable[21] = "Jeu_D_echec.MainWindow";
+            _typeNameTable[22] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[24] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[25] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[26] = "Int32";
 
-            _typeTable = new global::System.Type[24];
+            _typeTable = new global::System.Type[27];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -267,16 +270,19 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
             _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
             _typeTable[12] = typeof(global::Jeu_D_echec.Controls.GamePage);
             _typeTable[13] = typeof(global::Jeu_D_echec.Controls.HomePage);
-            _typeTable[14] = typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop);
-            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.Media.SystemBackdrop);
-            _typeTable[16] = typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind);
-            _typeTable[17] = typeof(global::System.Enum);
-            _typeTable[18] = typeof(global::Jeu_D_echec.MainWindow);
-            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[22] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[23] = typeof(global::System.Int32);
+            _typeTable[14] = typeof(global::Jeu_D_echec.Controls.PawnPromotionDialog);
+            _typeTable[15] = typeof(global::Jeu_D_echec.Models.PieceColor);
+            _typeTable[16] = typeof(global::System.Enum);
+            _typeTable[17] = typeof(global::Jeu_D_echec.Controls.RankingPage);
+            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop);
+            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Media.SystemBackdrop);
+            _typeTable[20] = typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind);
+            _typeTable[21] = typeof(global::Jeu_D_echec.MainWindow);
+            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[25] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[26] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -317,9 +323,11 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
         private object Activate_7_ChessSquare() { return new global::Jeu_D_echec.Controls.ChessSquare(); }
         private object Activate_12_GamePage() { return new global::Jeu_D_echec.Controls.GamePage(); }
         private object Activate_13_HomePage() { return new global::Jeu_D_echec.Controls.HomePage(); }
-        private object Activate_14_MicaBackdrop() { return new global::Microsoft.UI.Xaml.Media.MicaBackdrop(); }
-        private object Activate_18_MainWindow() { return new global::Jeu_D_echec.MainWindow(); }
-        private object Activate_20_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_14_PawnPromotionDialog() { return new global::Jeu_D_echec.Controls.PawnPromotionDialog(); }
+        private object Activate_17_RankingPage() { return new global::Jeu_D_echec.Controls.RankingPage(); }
+        private object Activate_18_MicaBackdrop() { return new global::Microsoft.UI.Xaml.Media.MicaBackdrop(); }
+        private object Activate_21_MainWindow() { return new global::Jeu_D_echec.MainWindow(); }
+        private object Activate_23_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_ChessBoard() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.Controls.ChessBoard).TypeHandle);
         private void StaticInitializer_6_ChessGame() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.Models.ChessGame).TypeHandle);
@@ -329,12 +337,15 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
         private void StaticInitializer_10_ChessPiece() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.Models.ChessPiece).TypeHandle);
         private void StaticInitializer_12_GamePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.Controls.GamePage).TypeHandle);
         private void StaticInitializer_13_HomePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.Controls.HomePage).TypeHandle);
-        private void StaticInitializer_14_MicaBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop).TypeHandle);
-        private void StaticInitializer_16_MicaKind() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind).TypeHandle);
-        private void StaticInitializer_17_Enum() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Enum).TypeHandle);
-        private void StaticInitializer_18_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.MainWindow).TypeHandle);
-        private void StaticInitializer_20_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_22_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_14_PawnPromotionDialog() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.Controls.PawnPromotionDialog).TypeHandle);
+        private void StaticInitializer_15_PieceColor() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.Models.PieceColor).TypeHandle);
+        private void StaticInitializer_16_Enum() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Enum).TypeHandle);
+        private void StaticInitializer_17_RankingPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.Controls.RankingPage).TypeHandle);
+        private void StaticInitializer_18_MicaBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop).TypeHandle);
+        private void StaticInitializer_20_MicaKind() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind).TypeHandle);
+        private void StaticInitializer_21_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Jeu_D_echec.MainWindow).TypeHandle);
+        private void StaticInitializer_23_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_25_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -342,7 +353,7 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_22_IList(object instance, object item)
+        private void VectorAdd_25_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -458,48 +469,74 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 14:   //  Microsoft.UI.Xaml.Media.MicaBackdrop
+            case 14:   //  Jeu_D_echec.Controls.PawnPromotionDialog
+                userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_14_PawnPromotionDialog;
+                userType.StaticInitializer = StaticInitializer_14_PawnPromotionDialog;
+                userType.AddMemberName("PawnColor");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Jeu_D_echec.Models.PieceColor
+                userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_15_PieceColor;
+                userType.AddEnumValue("White", global::Jeu_D_echec.Models.PieceColor.White);
+                userType.AddEnumValue("Black", global::Jeu_D_echec.Models.PieceColor.Black);
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  System.Enum
+                userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.StaticInitializer = StaticInitializer_16_Enum;
+                xamlType = userType;
+                break;
+
+            case 17:   //  Jeu_D_echec.Controls.RankingPage
+                userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_17_RankingPage;
+                userType.StaticInitializer = StaticInitializer_17_RankingPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  Microsoft.UI.Xaml.Media.MicaBackdrop
                 userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Media.SystemBackdrop"));
-                userType.Activator = Activate_14_MicaBackdrop;
-                userType.StaticInitializer = StaticInitializer_14_MicaBackdrop;
+                userType.Activator = Activate_18_MicaBackdrop;
+                userType.StaticInitializer = StaticInitializer_18_MicaBackdrop;
                 userType.AddMemberName("Kind");
                 xamlType = userType;
                 break;
 
-            case 15:   //  Microsoft.UI.Xaml.Media.SystemBackdrop
+            case 19:   //  Microsoft.UI.Xaml.Media.SystemBackdrop
                 xamlType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  Microsoft.UI.Composition.SystemBackdrops.MicaKind
+            case 20:   //  Microsoft.UI.Composition.SystemBackdrops.MicaKind
                 userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_16_MicaKind;
+                userType.StaticInitializer = StaticInitializer_20_MicaKind;
                 userType.AddEnumValue("Base", global::Microsoft.UI.Composition.SystemBackdrops.MicaKind.Base);
                 userType.AddEnumValue("BaseAlt", global::Microsoft.UI.Composition.SystemBackdrops.MicaKind.BaseAlt);
                 xamlType = userType;
                 break;
 
-            case 17:   //  System.Enum
-                userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_17_Enum;
-                xamlType = userType;
-                break;
-
-            case 18:   //  Jeu_D_echec.MainWindow
+            case 21:   //  Jeu_D_echec.MainWindow
                 userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_18_MainWindow;
-                userType.StaticInitializer = StaticInitializer_18_MainWindow;
+                userType.Activator = Activate_21_MainWindow;
+                userType.StaticInitializer = StaticInitializer_21_MainWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Microsoft.UI.Xaml.Window
+            case 22:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 20:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 23:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_20_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_20_TreeViewNode;
+                userType.Activator = Activate_23_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_23_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -511,19 +548,19 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 21:   //  Microsoft.UI.Xaml.DependencyObject
+            case 24:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 25:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_22_IList;
-                userType.CollectionAdd = VectorAdd_22_IList;
+                userType.StaticInitializer = StaticInitializer_25_IList;
+                userType.CollectionAdd = VectorAdd_25_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Int32
+            case 26:   //  Int32
                 xamlType = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -670,62 +707,72 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
             var that = (global::Jeu_D_echec.Controls.ChessSquare)instance;
             return that.PieceColor;
         }
-        private object get_9_MicaBackdrop_Kind(object instance)
+        private object get_9_PawnPromotionDialog_PawnColor(object instance)
+        {
+            var that = (global::Jeu_D_echec.Controls.PawnPromotionDialog)instance;
+            return that.PawnColor;
+        }
+        private void set_9_PawnPromotionDialog_PawnColor(object instance, object Value)
+        {
+            var that = (global::Jeu_D_echec.Controls.PawnPromotionDialog)instance;
+            that.PawnColor = (global::Jeu_D_echec.Models.PieceColor)Value;
+        }
+        private object get_10_MicaBackdrop_Kind(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Media.MicaBackdrop)instance;
             return that.Kind;
         }
-        private void set_9_MicaBackdrop_Kind(object instance, object Value)
+        private void set_10_MicaBackdrop_Kind(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Media.MicaBackdrop)instance;
             that.Kind = (global::Microsoft.UI.Composition.SystemBackdrops.MicaKind)Value;
         }
-        private object get_10_TreeViewNode_Children(object instance)
+        private object get_11_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_11_TreeViewNode_Content(object instance)
+        private object get_12_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_11_TreeViewNode_Content(object instance, object Value)
+        private void set_12_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_12_TreeViewNode_Depth(object instance)
+        private object get_13_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_13_TreeViewNode_HasChildren(object instance)
+        private object get_14_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_14_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_15_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_14_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_15_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_15_TreeViewNode_IsExpanded(object instance)
+        private object get_16_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_15_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_16_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_16_TreeViewNode_Parent(object instance)
+        private object get_17_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -800,57 +847,63 @@ namespace Jeu_D_echec.Jeu_D_echec_XamlTypeInfo
                 xamlMember.Getter = get_8_ChessSquare_PieceColor;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Jeu_D_echec.Controls.PawnPromotionDialog.PawnColor":
+                userType = (global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Jeu_D_echec.Controls.PawnPromotionDialog");
+                xamlMember = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlMember(this, "PawnColor", "Jeu_D_echec.Models.PieceColor");
+                xamlMember.Getter = get_9_PawnPromotionDialog_PawnColor;
+                xamlMember.Setter = set_9_PawnPromotionDialog_PawnColor;
+                break;
             case "Microsoft.UI.Xaml.Media.MicaBackdrop.Kind":
                 userType = (global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Media.MicaBackdrop");
                 xamlMember = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlMember(this, "Kind", "Microsoft.UI.Composition.SystemBackdrops.MicaKind");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_MicaBackdrop_Kind;
-                xamlMember.Setter = set_9_MicaBackdrop_Kind;
+                xamlMember.Getter = get_10_MicaBackdrop_Kind;
+                xamlMember.Setter = set_10_MicaBackdrop_Kind;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_10_TreeViewNode_Children;
+                xamlMember.Getter = get_11_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_TreeViewNode_Content;
-                xamlMember.Setter = set_11_TreeViewNode_Content;
+                xamlMember.Getter = get_12_TreeViewNode_Content;
+                xamlMember.Setter = set_12_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_TreeViewNode_Depth;
+                xamlMember.Getter = get_13_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_14_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_14_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_14_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_15_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_15_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_15_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_16_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_16_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Jeu_D_echec.Jeu_D_echec_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_16_TreeViewNode_Parent;
+                xamlMember.Getter = get_17_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

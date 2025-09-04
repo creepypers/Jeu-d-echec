@@ -1,11 +1,13 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using Jeu_D_echec.Models;
+using System.Threading.Tasks;
 
 namespace Jeu_D_echec.Controls
 {
@@ -50,7 +52,6 @@ namespace Jeu_D_echec.Controls
                 oldGame.PieceSelected -= OnPieceSelected;
                 oldGame.MoveMade -= OnMoveMade;
                 oldGame.GameStateChanged -= OnGameStateChanged;
-                oldGame.PawnPromotionRequired -= OnPawnPromotionRequired;
             }
 
             _game = newGame;
@@ -59,7 +60,6 @@ namespace Jeu_D_echec.Controls
                 _game.PieceSelected += OnPieceSelected;
                 _game.MoveMade += OnMoveMade;
                 _game.GameStateChanged += OnGameStateChanged;
-                _game.PawnPromotionRequired += OnPawnPromotionRequired;
                 UpdateBoard();
             }
         }
@@ -93,35 +93,35 @@ namespace Jeu_D_echec.Controls
         {
             if (_game == null) 
             {
-                System.Diagnostics.Debug.WriteLine("OnSquareClicked: _game is null");
+                // System.Diagnostics.Debug.WriteLine("OnSquareClicked: _game is null");
                 return;
             }
 
             if (e?.Position == null)
             {
-                System.Diagnostics.Debug.WriteLine("OnSquareClicked: Position is null");
+                // System.Diagnostics.Debug.WriteLine("OnSquareClicked: Position is null");
                 return;
             }
 
-            System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Clicked position {e.Position.Row},{e.Position.Column}");
-            System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Current player {_game.CurrentPlayer}");
-            System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Selected position {_selectedPosition?.Row},{_selectedPosition?.Column}");
-            System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Valid moves count {_validMoves.Count}");
+            // System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Clicked position {e.Position.Row},{e.Position.Column}");
+            // System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Current player {_game.CurrentPlayer}");
+            // System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Selected position {_selectedPosition?.Row},{_selectedPosition?.Column}");
+            // System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Valid moves count {_validMoves.Count}");
 
             if (_selectedPosition.HasValue)
             {
-                System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Has selected position, checking if move is valid");
+                // System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Has selected position, checking if move is valid");
                 // Try to make a move
                 if (_validMoves.Contains(e.Position) && _selectedPosition.HasValue)
                 {
-                    System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Move is valid, attempting to make move from {_selectedPosition.Value.Row},{_selectedPosition.Value.Column} to {e.Position.Row},{e.Position.Column}");
+                    // System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Move is valid, attempting to make move from {_selectedPosition.Value.Row},{_selectedPosition.Value.Column} to {e.Position.Row},{e.Position.Column}");
                     var fromPosition = _selectedPosition.Value; // Sauvegarder la position avant MakeMove
                     var pieceToAnimate = _squares[fromPosition.Row, fromPosition.Column].Piece; // Sauvegarder la pièce avant le mouvement
                     var capturedPiece = _squares[e.Position.Row, e.Position.Column].Piece; // Sauvegarder la pièce capturée avant le mouvement
                     
                     if (_game.MakeMove(e.Position))
                     {
-                        System.Diagnostics.Debug.WriteLine("OnSquareClicked: Move successful! Updating interface");
+                        // System.Diagnostics.Debug.WriteLine("OnSquareClicked: Move successful! Updating interface");
                         
                         // Mettre à jour l'interface immédiatement - pas d'animation pour l'instant
                         UpdateSelection();
@@ -130,40 +130,50 @@ namespace Jeu_D_echec.Controls
                         // AnimateMoveWithPiece(fromPosition, e.Position, pieceToAnimate, capturedPiece);
                         
                         MoveMade?.Invoke(this, new ChessMoveEventArgs(fromPosition, e.Position));
-                        System.Diagnostics.Debug.WriteLine("OnSquareClicked: Move completed successfully");
+                        // System.Diagnostics.Debug.WriteLine("OnSquareClicked: Move completed successfully");
                     }
                     else
                     {
-                        System.Diagnostics.Debug.WriteLine("OnSquareClicked: Move failed in _game.MakeMove");
+                        // Check if this is a pawn promotion case
+                        if (pieceToAnimate?.Type == PieceType.Pawn && (e.Position.Row == 0 || e.Position.Row == 7))
+                        {
+                            // System.Diagnostics.Debug.WriteLine("OnSquareClicked: Pawn promotion required, showing dialog");
+                            // Handle pawn promotion asynchronously
+                            _ = HandlePawnPromotion(fromPosition, e.Position, pieceToAnimate, capturedPiece);
+                        }
+                        else
+                        {
+                            // System.Diagnostics.Debug.WriteLine("OnSquareClicked: Move failed in _game.MakeMove");
+                        }
                     }
                 }
                 else
                 {
-                    System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Move not valid, trying to select new piece at {e.Position.Row},{e.Position.Column}");
+                    // System.Diagnostics.Debug.WriteLine($"OnSquareClicked: Move not valid, trying to select new piece at {e.Position.Row},{e.Position.Column}");
                     // Try to select a new piece
                     if (_game.SelectPiece(e.Position))
                     {
-                        System.Diagnostics.Debug.WriteLine("OnSquareClicked: New piece selected successfully");
+                        // System.Diagnostics.Debug.WriteLine("OnSquareClicked: New piece selected successfully");
                         UpdateSelection();
                     }
                     else
                     {
-                        System.Diagnostics.Debug.WriteLine("OnSquareClicked: Failed to select new piece");
+                        // System.Diagnostics.Debug.WriteLine("OnSquareClicked: Failed to select new piece");
                     }
                 }
             }
             else
             {
-                System.Diagnostics.Debug.WriteLine($"OnSquareClicked: No selected position, trying to select piece at {e.Position.Row},{e.Position.Column}");
+                // System.Diagnostics.Debug.WriteLine($"OnSquareClicked: No selected position, trying to select piece at {e.Position.Row},{e.Position.Column}");
                 // Try to select a piece
                 if (_game.SelectPiece(e.Position))
                 {
-                    System.Diagnostics.Debug.WriteLine("OnSquareClicked: Piece selected successfully");
+                    // System.Diagnostics.Debug.WriteLine("OnSquareClicked: Piece selected successfully");
                     UpdateSelection();
                 }
                 else
                 {
-                    System.Diagnostics.Debug.WriteLine("OnSquareClicked: Failed to select piece");
+                    // System.Diagnostics.Debug.WriteLine("OnSquareClicked: Failed to select piece");
                 }
             }
         }
@@ -189,26 +199,26 @@ namespace Jeu_D_echec.Controls
         {
             if (_game == null) 
             {
-                System.Diagnostics.Debug.WriteLine("UpdateSelection: _game is null");
+                // System.Diagnostics.Debug.WriteLine("UpdateSelection: _game is null");
                 return;
             }
 
             _selectedPosition = _game.SelectedPosition;
             _validMoves = _game.ValidMoves.ToList();
 
-            System.Diagnostics.Debug.WriteLine($"UpdateSelection: Selected position {_selectedPosition?.Row},{_selectedPosition?.Column}");
-            System.Diagnostics.Debug.WriteLine($"UpdateSelection: Valid moves count {_validMoves.Count}");
+            // System.Diagnostics.Debug.WriteLine($"UpdateSelection: Selected position {_selectedPosition?.Row},{_selectedPosition?.Column}");
+            // System.Diagnostics.Debug.WriteLine($"UpdateSelection: Valid moves count {_validMoves.Count}");
             foreach (var move in _validMoves)
             {
-                System.Diagnostics.Debug.WriteLine($"UpdateSelection: Valid move {move.Row},{move.Column}");
+                // System.Diagnostics.Debug.WriteLine($"UpdateSelection: Valid move {move.Row},{move.Column}");
             }
 
             // Update board pieces first
-            System.Diagnostics.Debug.WriteLine("UpdateSelection: Calling UpdateBoard");
+            // System.Diagnostics.Debug.WriteLine("UpdateSelection: Calling UpdateBoard");
             UpdateBoard();
 
             // Update all squares
-            System.Diagnostics.Debug.WriteLine("UpdateSelection: Updating square states");
+            // System.Diagnostics.Debug.WriteLine("UpdateSelection: Updating square states");
             for (int row = 0; row < 8; row++)
             {
                 for (int col = 0; col < 8; col++)
@@ -220,18 +230,18 @@ namespace Jeu_D_echec.Controls
                     square.IsValidMove = _validMoves.Contains(position);
                 }
             }
-            System.Diagnostics.Debug.WriteLine("UpdateSelection: Completed");
+            // System.Diagnostics.Debug.WriteLine("UpdateSelection: Completed");
         }
 
         private void UpdateBoard()
         {
             if (_game?.Board == null) 
             {
-                System.Diagnostics.Debug.WriteLine("UpdateBoard: _game or _game.Board is null");
+                // System.Diagnostics.Debug.WriteLine("UpdateBoard: _game or _game.Board is null");
                 return;
             }
 
-            System.Diagnostics.Debug.WriteLine("UpdateBoard: Starting to update board pieces");
+            // System.Diagnostics.Debug.WriteLine("UpdateBoard: Starting to update board pieces");
             for (int row = 0; row < 8; row++)
             {
                 for (int col = 0; col < 8; col++)
@@ -246,11 +256,11 @@ namespace Jeu_D_echec.Controls
 
                     if (oldPiece != piece)
                     {
-                        System.Diagnostics.Debug.WriteLine($"UpdateBoard: Piece changed at {row},{col} from {oldPiece?.Type} {oldPiece?.Color} to {piece?.Type} {piece?.Color}");
+                        // System.Diagnostics.Debug.WriteLine($"UpdateBoard: Piece changed at {row},{col} from {oldPiece?.Type} {oldPiece?.Color} to {piece?.Type} {piece?.Color}");
                     }
                 }
             }
-            System.Diagnostics.Debug.WriteLine("UpdateBoard: Completed");
+            // System.Diagnostics.Debug.WriteLine("UpdateBoard: Completed");
         }
 
         private bool IsKingInCheck(Position position, ChessPiece? piece)
@@ -263,12 +273,12 @@ namespace Jeu_D_echec.Controls
 
         private void AnimateMoveWithPiece(Position from, Position to, ChessPiece? piece, ChessPiece? capturedPiece = null)
         {
-            System.Diagnostics.Debug.WriteLine($"AnimateMoveWithPiece: Starting animation from {from.Row},{from.Column} to {to.Row},{to.Column}");
+            // System.Diagnostics.Debug.WriteLine($"AnimateMoveWithPiece: Starting animation from {from.Row},{from.Column} to {to.Row},{to.Column}");
             
             if (from.Row < 0 || from.Row >= 8 || from.Column < 0 || from.Column >= 8 ||
                 to.Row < 0 || to.Row >= 8 || to.Column < 0 || to.Column >= 8)
             {
-                System.Diagnostics.Debug.WriteLine("AnimateMoveWithPiece: Invalid position coordinates");
+                // System.Diagnostics.Debug.WriteLine("AnimateMoveWithPiece: Invalid position coordinates");
                 return;
             }
             
@@ -277,24 +287,24 @@ namespace Jeu_D_echec.Controls
 
             if (piece == null) 
             {
-                System.Diagnostics.Debug.WriteLine("AnimateMoveWithPiece: No piece provided");
+                // System.Diagnostics.Debug.WriteLine("AnimateMoveWithPiece: No piece provided");
                 return;
             }
 
-            System.Diagnostics.Debug.WriteLine($"AnimateMoveWithPiece: Moving {piece.Type} {piece.Color}");
-            System.Diagnostics.Debug.WriteLine($"AnimateMoveWithPiece: Captured piece: {capturedPiece?.Type} {capturedPiece?.Color}");
+            // System.Diagnostics.Debug.WriteLine($"AnimateMoveWithPiece: Moving {piece.Type} {piece.Color}");
+            // System.Diagnostics.Debug.WriteLine($"AnimateMoveWithPiece: Captured piece: {capturedPiece?.Type} {capturedPiece?.Color}");
 
             // Check if there's a capture using the saved captured piece
             if (capturedPiece != null)
             {
-                System.Diagnostics.Debug.WriteLine($"AnimateMoveWithPiece: Capturing {capturedPiece.Type} {capturedPiece.Color}");
+                // System.Diagnostics.Debug.WriteLine($"AnimateMoveWithPiece: Capturing {capturedPiece.Type} {capturedPiece.Color}");
                 // Temporarily disable capture animation to avoid conflicts
                 // AnimateCapture(toSquare, capturedPiece);
-                System.Diagnostics.Debug.WriteLine("AnimateMoveWithPiece: Capture animation temporarily disabled");
+                // System.Diagnostics.Debug.WriteLine("AnimateMoveWithPiece: Capture animation temporarily disabled");
             }
             else
             {
-                System.Diagnostics.Debug.WriteLine("AnimateMoveWithPiece: No capture - simple move");
+                // System.Diagnostics.Debug.WriteLine("AnimateMoveWithPiece: No capture - simple move");
             }
 
             // Hide the piece at the destination temporarily during animation
@@ -351,14 +361,14 @@ namespace Jeu_D_echec.Controls
             // Legacy method - redirect to new method
             // Note: This method should not be used as it can't properly detect captures
             // after the model has been updated. Use AnimateMoveWithPiece directly.
-            System.Diagnostics.Debug.WriteLine("WARNING: AnimateMove legacy method called - this may cause issues");
+            // System.Diagnostics.Debug.WriteLine("WARNING: AnimateMove legacy method called - this may cause issues");
             var fromSquare = _squares[from.Row, from.Column];
             var piece = fromSquare.Piece;
             
             // Simple animation without capture detection to avoid conflicts
             if (piece != null)
             {
-                System.Diagnostics.Debug.WriteLine($"AnimateMove legacy: Moving {piece.Type} {piece.Color} without capture detection");
+                // System.Diagnostics.Debug.WriteLine($"AnimateMove legacy: Moving {piece.Type} {piece.Color} without capture detection");
                 AnimateMoveWithPiece(from, to, piece, null); // No capture detection in legacy method
             }
         }
@@ -370,12 +380,12 @@ namespace Jeu_D_echec.Controls
                 capturedPiece = capturedSquare.Piece;
                 if (capturedPiece == null) 
                 {
-                    System.Diagnostics.Debug.WriteLine("AnimateCapture: No piece to capture, skipping animation");
+                    // System.Diagnostics.Debug.WriteLine("AnimateCapture: No piece to capture, skipping animation");
                     return;
                 }
             }
 
-            System.Diagnostics.Debug.WriteLine($"AnimateCapture: Starting capture animation for {capturedPiece.Type} {capturedPiece.Color}");
+            // System.Diagnostics.Debug.WriteLine($"AnimateCapture: Starting capture animation for {capturedPiece.Type} {capturedPiece.Color}");
 
             // Create a temporary element for capture animation
             var captureElement = new TextBlock
@@ -443,16 +453,74 @@ namespace Jeu_D_echec.Controls
                 }
             }
             
-            System.Diagnostics.Debug.WriteLine("OnMoveAnimationCompleted: Animation finished, board restored");
+            // System.Diagnostics.Debug.WriteLine("OnMoveAnimationCompleted: Animation finished, board restored");
         }
-        private void OnPawnPromotionRequired(object? sender, PawnPromotionEventArgs e)
+        private async Task HandlePawnPromotion(Position fromPosition, Position toPosition, ChessPiece? piece, ChessPiece? capturedPiece)
         {
-            System.Diagnostics.Debug.WriteLine($"Pawn promotion required at {e.Position.Row},{e.Position.Column} for {e.Color}");
+            // System.Diagnostics.Debug.WriteLine($"HandlePawnPromotion: Promoting pawn at {fromPosition.Row},{fromPosition.Column} to {toPosition.Row},{toPosition.Column}");
             
-            // For now, we'll use a simple approach - always promote to Queen
-            // In a full implementation, you would show a dialog to let the user choose
-            e.PromotedTo = PieceType.Queen;
-            System.Diagnostics.Debug.WriteLine($"Promoting to {e.PromotedTo}");
+            var promotionDialog = new PawnPromotionDialog(piece?.Color ?? PieceColor.White);
+            var tcs = new TaskCompletionSource<PieceType>();
+            
+            // Subscribe to the promotion selected event
+            promotionDialog.PromotionSelected += (sender, pieceType) =>
+            {
+                tcs.SetResult(pieceType);
+                // System.Diagnostics.Debug.WriteLine($"Promotion selected: {pieceType}");
+            };
+            
+            // Create a ContentDialog
+            var dialog = new ContentDialog
+            {
+                Title = "Promotion du pion",
+                Content = promotionDialog,
+                PrimaryButtonText = "Confirmer",
+                SecondaryButtonText = "Annuler",
+                DefaultButton = ContentDialogButton.Primary,
+                XamlRoot = this.XamlRoot
+            };
+
+            // Show the dialog
+            var dialogTask = dialog.ShowAsync().AsTask();
+            
+            // Wait for either a piece selection or dialog completion
+            var completedTask = await Task.WhenAny(dialogTask, tcs.Task);
+            
+            PieceType selectedPieceType;
+            
+            if (completedTask == tcs.Task)
+            {
+                // Piece was selected, close the dialog
+                selectedPieceType = await tcs.Task;
+                dialog.Hide();
+            }
+            else
+            {
+                // Dialog was closed without piece selection
+                var result = await dialogTask;
+                if (result == ContentDialogResult.Primary)
+                {
+                    var selectedPiece = promotionDialog.GetSelectedPieceType();
+                    selectedPieceType = selectedPiece ?? PieceType.Queen; // Default to Queen if no selection
+                }
+                else
+                {
+                    selectedPieceType = PieceType.Queen; // Default to Queen if cancelled
+                }
+            }
+            
+            // Make the move with promotion
+            // System.Diagnostics.Debug.WriteLine($"Making move with promotion to {selectedPieceType}");
+            if (_game.MakeMoveWithPromotion(toPosition, selectedPieceType))
+            {
+                // System.Diagnostics.Debug.WriteLine("Promotion move successful! Updating interface");
+                UpdateSelection();
+                MoveMade?.Invoke(this, new ChessMoveEventArgs(fromPosition, toPosition));
+            }
+            else
+            {
+                // System.Diagnostics.Debug.WriteLine("Promotion move failed");
+            }
         }
     }
 

@@ -18,7 +18,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>134F16106F560A01FF77D440EFC68CE1E389D69C8AFD19FB43C240691201DB24</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C6C3D5411242DDC1EDAD28C0EFEF06ABB175E69E8B5AE5EE59F032F171D12E1E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>cad4c6c1-7b43-4fc5-bca3-eef59f012a44_1.0.0.0_x64__vv2xatvqcjaky</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>cad4c6c1-7b43-4fc5-bca3-eef59f012a44_vv2xatvqcjaky!App</RegisteredUserModeAppID>
     <RegisteredPackageID>cad4c6c1-7b43-4fc5-bca3-eef59f012a44</RegisteredPackageID>
@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-09-03T21:42:34.484</Modified>
+      <Modified>2025-09-04T05:38:14.194</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-09-03T21:42:34.001</Modified>
+      <Modified>2025-09-04T04:32:30.470</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Jeu D%27echec.runtimeconfig.json">
-      <PackagePath>Jeu D%27echec.runtimeconfig.json</PackagePath>
-      <Modified>2025-09-03T21:08:56.108</Modified>
+    <AppxPackagedFile Include="C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\JeuDechec.runtimeconfig.json">
+      <PackagePath>JeuDechec.runtimeconfig.json</PackagePath>
+      <Modified>2025-09-04T03:25:18.843</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Jeu D%27echec.dll">
-      <PackagePath>Jeu D%27echec.dll</PackagePath>
-      <Modified>2025-09-03T21:42:33.835</Modified>
+    <AppxPackagedFile Include="C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\JeuDechec.dll">
+      <PackagePath>JeuDechec.dll</PackagePath>
+      <Modified>2025-09-04T05:38:13.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
-      <PackagePath>Jeu D%27echec.exe</PackagePath>
-      <Modified>2025-09-03T21:42:33.846</Modified>
+      <PackagePath>JeuDechec.exe</PackagePath>
+      <Modified>2025-09-04T05:38:13.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.19\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -192,10 +192,6 @@
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.19\runtimes\win-x64\lib\net8.0\System.Dynamic.Runtime.dll">
       <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
       <Modified>2025-07-15T18:00:56.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.19\runtimes\win-x64\lib\net8.0\System.Formats.Asn1.dll">
-      <PackagePath>System.Formats.Asn1.dll</PackagePath>
-      <Modified>2025-07-15T18:07:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.19\runtimes\win-x64\lib\net8.0\System.Formats.Tar.dll">
       <PackagePath>System.Formats.Tar.dll</PackagePath>
@@ -773,9 +769,21 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2024-11-11T17:23:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.data.sqlite.core\9.0.8\lib\net8.0\Microsoft.Data.Sqlite.dll">
-      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
-      <Modified>2025-07-18T15:09:10.000</Modified>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\azure.core\1.38.0\lib\net6.0\Azure.Core.dll">
+      <PackagePath>Azure.Core.dll</PackagePath>
+      <Modified>2024-02-26T15:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\azure.identity\1.11.4\lib\netstandard2.0\Azure.Identity.dll">
+      <PackagePath>Azure.Identity.dll</PackagePath>
+      <Modified>2024-06-10T16:43:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.bcl.asyncinterfaces\7.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+      <Modified>2022-10-18T16:14:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.data.sqlclient\5.1.6\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll">
+      <PackagePath>Microsoft.Data.SqlClient.dll</PackagePath>
+      <Modified>2024-08-27T18:23:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.entityframeworkcore\9.0.8\lib\net8.0\Microsoft.EntityFrameworkCore.dll">
       <PackagePath>Microsoft.EntityFrameworkCore.dll</PackagePath>
@@ -789,9 +797,9 @@
       <PackagePath>Microsoft.EntityFrameworkCore.Relational.dll</PackagePath>
       <Modified>2025-07-18T15:10:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.entityframeworkcore.sqlite.core\9.0.8\lib\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll">
-      <PackagePath>Microsoft.EntityFrameworkCore.Sqlite.dll</PackagePath>
-      <Modified>2025-07-18T15:11:24.000</Modified>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.entityframeworkcore.sqlserver\9.0.8\lib\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.SqlServer.dll</PackagePath>
+      <Modified>2025-07-18T15:10:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.extensions.caching.abstractions\9.0.8\lib\net8.0\Microsoft.Extensions.Caching.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Caching.Abstractions.dll</PackagePath>
@@ -813,10 +821,6 @@
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
       <Modified>2025-07-15T17:31:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.extensions.dependencymodel\9.0.8\lib\net8.0\Microsoft.Extensions.DependencyModel.dll">
-      <PackagePath>Microsoft.Extensions.DependencyModel.dll</PackagePath>
-      <Modified>2025-07-15T17:38:42.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.extensions.logging\9.0.8\lib\net8.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
       <Modified>2025-07-15T17:37:44.000</Modified>
@@ -832,6 +836,46 @@
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.extensions.primitives\9.0.8\lib\net8.0\Microsoft.Extensions.Primitives.dll">
       <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
       <Modified>2025-07-15T17:30:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.identity.client\4.61.3\lib\net6.0\Microsoft.Identity.Client.dll">
+      <PackagePath>Microsoft.Identity.Client.dll</PackagePath>
+      <Modified>2024-06-06T22:09:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.identity.client.extensions.msal\4.61.3\lib\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll">
+      <PackagePath>Microsoft.Identity.Client.Extensions.Msal.dll</PackagePath>
+      <Modified>2024-06-06T22:14:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.identitymodel.abstractions\6.35.0\lib\net6.0\Microsoft.IdentityModel.Abstractions.dll">
+      <PackagePath>Microsoft.IdentityModel.Abstractions.dll</PackagePath>
+      <Modified>2023-12-01T04:56:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.identitymodel.jsonwebtokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll">
+      <PackagePath>Microsoft.IdentityModel.JsonWebTokens.dll</PackagePath>
+      <Modified>2023-12-01T04:34:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.identitymodel.logging\6.35.0\lib\net6.0\Microsoft.IdentityModel.Logging.dll">
+      <PackagePath>Microsoft.IdentityModel.Logging.dll</PackagePath>
+      <Modified>2023-12-01T04:35:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.identitymodel.protocols\6.35.0\lib\net6.0\Microsoft.IdentityModel.Protocols.dll">
+      <PackagePath>Microsoft.IdentityModel.Protocols.dll</PackagePath>
+      <Modified>2023-12-01T04:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.identitymodel.protocols.openidconnect\6.35.0\lib\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <PackagePath>Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</PackagePath>
+      <Modified>2023-12-01T04:48:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.identitymodel.tokens\6.35.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll">
+      <PackagePath>Microsoft.IdentityModel.Tokens.dll</PackagePath>
+      <Modified>2023-12-01T04:41:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.sqlserver.server\1.0.0\lib\netstandard2.0\Microsoft.SqlServer.Server.dll">
+      <PackagePath>Microsoft.SqlServer.Server.dll</PackagePath>
+      <Modified>2022-01-27T17:19:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.win32.systemevents\6.0.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
+      <Modified>2021-10-22T23:40:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Graphics.Imaging.Projection.dll">
       <PackagePath>Microsoft.Graphics.Imaging.Projection.dll</PackagePath>
@@ -933,25 +977,49 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2025-06-05T21:50:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.10\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
-      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
-      <Modified>2024-09-11T20:14:18.000</Modified>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.clientmodel\1.0.0\lib\net6.0\System.ClientModel.dll">
+      <PackagePath>System.ClientModel.dll</PackagePath>
+      <Modified>2024-01-03T17:43:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\sqlitepclraw.core\2.1.10\lib\netstandard2.0\SQLitePCLRaw.core.dll">
-      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
-      <Modified>2024-09-11T20:12:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.10\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
-      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
-      <Modified>2024-09-11T20:12:38.000</Modified>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.configuration.configurationmanager\6.0.1\lib\net6.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
+      <Modified>2022-08-19T19:58:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.diagnostics.diagnosticsource\9.0.8\lib\net8.0\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
       <Modified>2025-07-15T17:34:34.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.drawing.common\6.0.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+      <Modified>2021-10-22T23:48:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.formats.asn1\9.0.8\lib\net8.0\System.Formats.Asn1.dll">
+      <PackagePath>System.Formats.Asn1.dll</PackagePath>
+      <Modified>2025-07-15T17:30:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.identitymodel.tokens.jwt\6.35.0\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll">
+      <PackagePath>System.IdentityModel.Tokens.Jwt.dll</PackagePath>
+      <Modified>2023-12-01T04:31:48.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.io.pipelines\9.0.8\lib\net8.0\System.IO.Pipelines.dll">
       <PackagePath>System.IO.Pipelines.dll</PackagePath>
       <Modified>2025-07-15T17:35:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.memory.data\1.0.2\lib\netstandard2.0\System.Memory.Data.dll">
+      <PackagePath>System.Memory.Data.dll</PackagePath>
+      <Modified>2021-04-08T16:45:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.runtime.caching\6.0.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll">
+      <PackagePath>System.Runtime.Caching.dll</PackagePath>
+      <Modified>2021-10-22T23:52:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.security.cryptography.protecteddata\6.0.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
+      <Modified>2021-10-22T23:51:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.security.permissions\6.0.0\lib\net6.0\System.Security.Permissions.dll">
+      <PackagePath>System.Security.Permissions.dll</PackagePath>
+      <Modified>2021-10-22T23:49:50.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.text.encodings.web\9.0.8\lib\net8.0\System.Text.Encodings.Web.dll">
       <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
@@ -960,6 +1028,14 @@
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.text.json\9.0.8\lib\net8.0\System.Text.Json.dll">
       <PackagePath>System.Text.Json.dll</PackagePath>
       <Modified>2025-07-15T17:38:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\system.windows.extensions\6.0.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll">
+      <PackagePath>System.Windows.Extensions.dll</PackagePath>
+      <Modified>2021-10-22T23:49:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.data.sqlclient.sni.runtime\5.1.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll">
+      <PackagePath>Microsoft.Data.SqlClient.SNI.dll</PackagePath>
+      <Modified>2023-08-11T18:56:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>WebView2Loader.dll</PackagePath>
@@ -973,10 +1049,6 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2025-06-05T21:49:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.10\runtimes\win-x64\native\e_sqlite3.dll">
-      <PackagePath>e_sqlite3.dll</PackagePath>
-      <Modified>2024-09-11T20:05:00.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
       <Modified>2024-11-10T08:58:00.000</Modified>
@@ -985,17 +1057,13 @@
       <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
       <Modified>2024-11-10T08:57:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Jeu D%27echec.deps.json">
-      <PackagePath>Jeu D%27echec.deps.json</PackagePath>
-      <Modified>2025-09-03T21:08:57.041</Modified>
+    <AppxPackagedFile Include="C:\Users\Administrateur\source\repos\Jeu D%27echec\Jeu D%27echec\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\JeuDechec.deps.json">
+      <PackagePath>JeuDechec.deps.json</PackagePath>
+      <Modified>2025-09-04T03:25:19.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\humanizer.core\2.14.1\lib\net6.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>
       <Modified>2022-01-29T15:04:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.bcl.asyncinterfaces\7.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll">
-      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
-      <Modified>2022-10-18T16:14:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.build.locator\1.7.8\lib\net6.0\Microsoft.Build.Locator.dll">
       <PackagePath>Microsoft.Build.Locator.dll</PackagePath>
@@ -1028,6 +1096,10 @@
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.entityframeworkcore.design\9.0.8\lib\net8.0\Microsoft.EntityFrameworkCore.Design.dll">
       <PackagePath>Microsoft.EntityFrameworkCore.Design.dll</PackagePath>
       <Modified>2025-07-18T15:10:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\microsoft.extensions.dependencymodel\9.0.8\lib\net8.0\Microsoft.Extensions.DependencyModel.dll">
+      <PackagePath>Microsoft.Extensions.DependencyModel.dll</PackagePath>
+      <Modified>2025-07-15T17:38:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrateur\.nuget\packages\mono.texttemplating\3.0.0\lib\net6.0\Mono.TextTemplating.dll">
       <PackagePath>Mono.TextTemplating.dll</PackagePath>

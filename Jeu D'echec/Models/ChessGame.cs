@@ -28,6 +28,7 @@ namespace Jeu_D_echec.Models
         public event EventHandler<GameStateChangedEventArgs>? GameStateChanged;
         public event EventHandler<PawnPromotionEventArgs>? PawnPromotionRequired;
         public event EventHandler<DrawRequestedEventArgs>? DrawRequested;
+        public event EventHandler<GameEndedEventArgs>? GameEnded;
 
         public ChessGame()
         {
@@ -41,30 +42,30 @@ namespace Jeu_D_echec.Models
         public bool SelectPiece(Position position)
         {
             var piece = Board[position];
-            System.Diagnostics.Debug.WriteLine($"SelectPiece at {position.Row},{position.Column} - Piece: {piece?.Type} {piece?.Color}, CurrentPlayer: {CurrentPlayer}");
+            // System.Diagnostics.Debug.WriteLine($"SelectPiece at {position.Row},{position.Column} - Piece: {piece?.Type} {piece?.Color}, CurrentPlayer: {CurrentPlayer}");
             
             if (piece?.Color != CurrentPlayer) 
             {
-                System.Diagnostics.Debug.WriteLine("SelectPiece failed - wrong color");
+                // System.Diagnostics.Debug.WriteLine("SelectPiece failed - wrong color");
                 return false;
             }
 
             SelectedPosition = position;
             ValidMoves = Board.GetValidMoves(position, EnPassantTarget);
-            System.Diagnostics.Debug.WriteLine($"SelectPiece successful - Valid moves: {ValidMoves.Count}");
+            // System.Diagnostics.Debug.WriteLine($"SelectPiece successful - Valid moves: {ValidMoves.Count}");
             PieceSelected?.Invoke(this, new PieceSelectedEventArgs(position, ValidMoves));
             return true;
         }
 
         public bool MakeMove(Position to)
         {
-            System.Diagnostics.Debug.WriteLine($"MakeMove to {to.Row},{to.Column}");
-            System.Diagnostics.Debug.WriteLine($"SelectedPosition: {SelectedPosition?.Row},{SelectedPosition?.Column}");
-            System.Diagnostics.Debug.WriteLine($"ValidMoves contains target: {ValidMoves.Contains(to)}");
+            // System.Diagnostics.Debug.WriteLine($"MakeMove to {to.Row},{to.Column}");
+            // System.Diagnostics.Debug.WriteLine($"SelectedPosition: {SelectedPosition?.Row},{SelectedPosition?.Column}");
+            // System.Diagnostics.Debug.WriteLine($"ValidMoves contains target: {ValidMoves.Contains(to)}");
             
             if (!SelectedPosition.HasValue || !ValidMoves.Contains(to))
             {
-                System.Diagnostics.Debug.WriteLine("MakeMove failed - no selection or invalid move");
+                // System.Diagnostics.Debug.WriteLine("MakeMove failed - no selection or invalid move");
                 return false;
             }
 
@@ -72,14 +73,14 @@ namespace Jeu_D_echec.Models
             var piece = Board[from];
             if (piece?.Color != CurrentPlayer) 
             {
-                System.Diagnostics.Debug.WriteLine("MakeMove failed - wrong color");
+                // System.Diagnostics.Debug.WriteLine("MakeMove failed - wrong color");
                 return false;
             }
 
             // Check if move is valid
             if (!ValidMoves.Contains(to)) 
             {
-                System.Diagnostics.Debug.WriteLine("MakeMove failed - move not in valid moves");
+                // System.Diagnostics.Debug.WriteLine("MakeMove failed - move not in valid moves");
                 return false;
             }
 
@@ -91,24 +92,21 @@ namespace Jeu_D_echec.Models
                 var capturedPawnRow = CurrentPlayer == PieceColor.White ? to.Row + 1 : to.Row - 1;
                 capturedPiece = Board[new Position(capturedPawnRow, to.Column)];
                 Board[new Position(capturedPawnRow, to.Column)] = null;
-                System.Diagnostics.Debug.WriteLine($"En passant capture at {capturedPawnRow},{to.Column}");
+                // System.Diagnostics.Debug.WriteLine($"En passant capture at {capturedPawnRow},{to.Column}");
             }
 
             // Check for pawn promotion
             if (piece.Type == PieceType.Pawn && (to.Row == 0 || to.Row == 7))
             {
-                // Trigger pawn promotion event
-                var promotionArgs = new PawnPromotionEventArgs(to, piece.Color);
-                PawnPromotionRequired?.Invoke(this, promotionArgs);
-                
-                // Make the move with promotion
-                System.Diagnostics.Debug.WriteLine($"Making move from {from.Row},{from.Column} to {to.Row},{to.Column} with promotion to {promotionArgs.PromotedTo}");
-                Board.MakeMove(from, to, promotionArgs.PromotedTo);
+                // For pawn promotion, we need to return false and let the UI handle the promotion
+                // The UI will call MakeMoveWithPromotion after getting the user's choice
+                // System.Diagnostics.Debug.WriteLine("Pawn promotion required - returning false to let UI handle it");
+                return false;
             }
             else
             {
                 // Make the move normally
-                System.Diagnostics.Debug.WriteLine($"Making move from {from.Row},{from.Column} to {to.Row},{to.Column}");
+                // System.Diagnostics.Debug.WriteLine($"Making move from {from.Row},{from.Column} to {to.Row},{to.Column}");
                 Board.MakeMove(from, to);
             }
 
@@ -118,7 +116,7 @@ namespace Jeu_D_echec.Models
             {
                 var enPassantRow = CurrentPlayer == PieceColor.White ? to.Row + 1 : to.Row - 1;
                 EnPassantTarget = new Position(enPassantRow, to.Column);
-                System.Diagnostics.Debug.WriteLine($"En passant target set at {enPassantRow},{to.Column}");
+                // System.Diagnostics.Debug.WriteLine($"En passant target set at {enPassantRow},{to.Column}");
             }
 
             // Record the move
@@ -131,13 +129,82 @@ namespace Jeu_D_echec.Models
 
             // Switch players
             CurrentPlayer = CurrentPlayer == PieceColor.White ? PieceColor.Black : PieceColor.White;
-            System.Diagnostics.Debug.WriteLine($"Player switched to: {CurrentPlayer}");
+            // System.Diagnostics.Debug.WriteLine($"Player switched to: {CurrentPlayer}");
 
             // Update game state
             UpdateGameState();
 
             MoveMade?.Invoke(this, new MoveMadeEventArgs(move));
-            System.Diagnostics.Debug.WriteLine("MakeMove successful");
+            // System.Diagnostics.Debug.WriteLine("MakeMove successful");
+            return true;
+        }
+
+        public bool MakeMoveWithPromotion(Position to, PieceType promotedTo)
+        {
+            // System.Diagnostics.Debug.WriteLine($"MakeMoveWithPromotion to {to.Row},{to.Column} promoting to {promotedTo}");
+            
+            if (!SelectedPosition.HasValue || !ValidMoves.Contains(to))
+            {
+                // System.Diagnostics.Debug.WriteLine("MakeMoveWithPromotion failed - no selection or invalid move");
+                return false;
+            }
+
+            var from = SelectedPosition.Value;
+            var piece = Board[from];
+            if (piece?.Color != CurrentPlayer) 
+            {
+                // System.Diagnostics.Debug.WriteLine("MakeMoveWithPromotion failed - wrong color");
+                return false;
+            }
+
+            // Check if move is valid
+            if (!ValidMoves.Contains(to)) 
+            {
+                // System.Diagnostics.Debug.WriteLine("MakeMoveWithPromotion failed - move not in valid moves");
+                return false;
+            }
+
+            // Handle en passant capture
+            var capturedPiece = Board[to];
+            if (piece.Type == PieceType.Pawn && to == EnPassantTarget)
+            {
+                // Capture the pawn that moved two squares
+                var capturedPawnRow = CurrentPlayer == PieceColor.White ? to.Row + 1 : to.Row - 1;
+                capturedPiece = Board[new Position(capturedPawnRow, to.Column)];
+                Board[new Position(capturedPawnRow, to.Column)] = null;
+                // System.Diagnostics.Debug.WriteLine($"En passant capture at {capturedPawnRow},{to.Column}");
+            }
+
+            // Make the move with promotion
+            // System.Diagnostics.Debug.WriteLine($"Making move from {from.Row},{from.Column} to {to.Row},{to.Column} with promotion to {promotedTo}");
+            Board.MakeMove(from, to, promotedTo);
+
+            // Set en passant target for next move (if pawn moved two squares)
+            EnPassantTarget = null;
+            if (piece.Type == PieceType.Pawn && Math.Abs(to.Row - from.Row) == 2)
+            {
+                var enPassantRow = CurrentPlayer == PieceColor.White ? to.Row + 1 : to.Row - 1;
+                EnPassantTarget = new Position(enPassantRow, to.Column);
+                // System.Diagnostics.Debug.WriteLine($"En passant target set at {enPassantRow},{to.Column}");
+            }
+
+            // Record the move
+            var move = new ChessMove(from, to, piece, capturedPiece);
+            MoveHistory.Add(move);
+
+            // Clear selection
+            SelectedPosition = null;
+            ValidMoves.Clear();
+
+            // Switch players
+            CurrentPlayer = CurrentPlayer == PieceColor.White ? PieceColor.Black : PieceColor.White;
+            // System.Diagnostics.Debug.WriteLine($"Player switched to: {CurrentPlayer}");
+
+            // Update game state
+            UpdateGameState();
+
+            MoveMade?.Invoke(this, new MoveMadeEventArgs(move));
+            // System.Diagnostics.Debug.WriteLine("MakeMoveWithPromotion successful");
             return true;
         }
 
@@ -165,7 +232,30 @@ namespace Jeu_D_echec.Models
             if (State != previousState)
             {
                 GameStateChanged?.Invoke(this, new GameStateChangedEventArgs(State, CurrentPlayer));
+                
+                // Check if game has ended
+                if (IsGameEnded())
+                {
+                    var outcome = GetGameOutcome();
+                    GameEnded?.Invoke(this, new GameEndedEventArgs(outcome, State));
+                }
             }
+        }
+
+        private bool IsGameEnded()
+        {
+            return State == GameState.Checkmate || State == GameState.Stalemate || State == GameState.Draw;
+        }
+
+        private GameOutcome GetGameOutcome()
+        {
+            return State switch
+            {
+                GameState.Checkmate => CurrentPlayer == PieceColor.White ? GameOutcome.BlackWins : GameOutcome.WhiteWins,
+                GameState.Stalemate => GameOutcome.Draw,
+                GameState.Draw => GameOutcome.Draw,
+                _ => GameOutcome.Draw
+            };
         }
 
         public void NewGame()
@@ -186,10 +276,21 @@ namespace Jeu_D_echec.Models
             Board = board;
             MoveHistory = moveHistory ?? new List<ChessMove>();
             EnPassantTarget = enPassantTarget;
-            CurrentPlayer = currentPlayer;
-            State = state;
+            SetCurrentPlayer(currentPlayer);
+            SetState(state);
             SelectedPosition = null;
             ValidMoves.Clear();
+        }
+
+        // Internal methods to set private properties
+        internal void SetCurrentPlayer(PieceColor currentPlayer)
+        {
+            CurrentPlayer = currentPlayer;
+        }
+
+        internal void SetState(GameState state)
+        {
+            State = state;
         }
 
         public bool CanUndo()
@@ -314,6 +415,18 @@ namespace Jeu_D_echec.Models
         public DrawRequestedEventArgs(PieceColor requestingPlayer)
         {
             RequestingPlayer = requestingPlayer;
+        }
+    }
+
+    public class GameEndedEventArgs : EventArgs
+    {
+        public GameOutcome Outcome { get; }
+        public GameState State { get; }
+
+        public GameEndedEventArgs(GameOutcome outcome, GameState state)
+        {
+            Outcome = outcome;
+            State = state;
         }
     }
 }
